@@ -40,6 +40,6 @@ Domain 4: Billing and Pricing
 
 The exam is largely high level and provides a basic overview of AWS core offerings, security, pricing, and support services. You don't need any in-depth knowledge of AWS  to pass the exam. You just need to have a basic awareness of the various AWS service offerings and understand the pricing and support model.
 
-<img src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/AWS%20Applications.png" alt="application">/<img>
+<img src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/AWS%20Applications.png" alt="application" />
 
 
