@@ -22,33 +22,33 @@ A página de certificação Certified Cloud Practitioner fornece links para vár
 
 # O conteúdo abordado no exame é o seguinte:
 
-Domain 1 --> Cloud Concepts      --> 26%
-Domain 2 --> Security            --> 25%
-Domain 3 --> Technology          --> 33%
-Domain 4 --> Billing and Pricing --> 16%
+Domain 1 --> Cloud Concepts      --> 26% <br/>
+Domain 2 --> Security            --> 25% <br/>
+Domain 3 --> Technology          --> 33% <br/>
+Domain 4 --> Billing and Pricing --> 16% <br/>
 
 
-Domain 1: Cloud Concepts
-1.1 Define the AWS Cloud and its value proposition
-1.2 Identify aspects of AWS Cloud economics
-1.3 List the different cloud architecture design principles
+# Domain 1: Cloud Concepts
+1.1 Define the AWS Cloud and its value proposition <br/>
+1.2 Identify aspects of AWS Cloud economics <br/>
+1.3 List the different cloud architecture design principles <br/>
 
-Domain 2: Security
-2.1 Define the AWS Shared Responsibility model
-2.2 Define AWS Cloud security and compliance concepts
-2.3 Identify AWS access management capabilities
-2.4 Identify resources for security support
+# Domain 2: Security
+2.1 Define the AWS Shared Responsibility model <br/>
+2.2 Define AWS Cloud security and compliance concepts <br/>
+2.3 Identify AWS access management capabilities <br/>
+2.4 Identify resources for security support <br/>
 
-Domain 3: Technology
-3.1 Define methods of deploying and operating in the AWS Cloud
-3.2 Define the AWS global infrastructure
-3.2 Identify the core AWS services
-3.4 Identify resources for technology support
+# Domain 3: Technology
+3.1 Define methods of deploying and operating in the AWS Cloud <br/>
+3.2 Define the AWS global infrastructure <br/>
+3.2 Identify the core AWS services <br/>
+3.4 Identify resources for technology support <br/>
 
-Domain 4: Billing and Pricing
-4.1 Compare and contrast the various pricing models for AWS
-4.2 Recognise the various account structures in relation to AWS billing and pricing
-4.3 Identify resources available for billing support
+# Domain 4: Billing and Pricing
+4.1 Compare and contrast the various pricing models for AWS <br/>
+4.2 Recognise the various account structures in relation to AWS billing and pricing <br/>
+4.3 Identify resources available for billing support <br/>
 
 O exame AWS Certified Cloud Practitioner (CLF-C01) tem como objetivo para indivíduos que têm o conhecimento e as habilidades necessárias para efetivamente
 demonstrar uma compreensão geral da nuvem AWS, independente de funções técnicas específicas abordadas por outras certificações AWS (por exemplo, Arquiteto de soluções - Associado, Desenvolvedor - Associado ou SysOps Administrador - Associado). 
@@ -169,22 +169,22 @@ Se puder, faça o exame prático disponível no site da AWS
 
 Crie uma conta no site do AWS para se familiarizar com a interface e com os serviços durante o estudo.
 
-Outros meios que estou tambem utilizando:
-01: Criação de Mapas Mentais.
-02: Livros especificos (Assunto) e Questões.
-03: Criação de um banco de dados de questões sobre a Certificação especifica.
-04: Aprendizagem baseada em projetos
-05: Aprendizagem baseada em problemas
-06: Busca aulas no youtube sobre o assunto.
+# Outros meios que estou tambem utilizando:
+01: Criação de Mapas Mentais.  <br/>
+02: Livros especificos (Assunto) e Questões.  <br/>
+03: Criação de um banco de dados de questões sobre a Certificação especifica. <br/>
+04: Aprendizagem baseada em projetos <br/>
+05: Aprendizagem baseada em problemas <br/>
+06: Busca aulas no youtube sobre o assunto. <br/>
 
 
-Este espaço tem como missão 7 melhores formas de aplicar a aprendizagem ativa nos estudos?
-Anote tudo!
-Grife e rabisque!
-Questione-se ao final de uma leitura ou aula
-Pesquise mais!
-Faça exercícios
-Crie mapas mentais
-Ensine alguém!
+# Este espaço tem como missão 7 melhores formas de aplicar a aprendizagem ativa nos estudos?
+1. Anote tudo!
+2. Grife e rabisque!
+3. Questione-se ao final de uma leitura ou aula
+4. Pesquise mais!
+5. Faça exercícios
+6. Crie mapas mentais
+7. Ensine alguém!
 
 
