@@ -156,4 +156,6 @@ Algumas tecnicas que ajuda na melhoria do Aprendizagem:
 
 
 
+<img src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/AWS%20Applications.png" alt="application" />
+
 
