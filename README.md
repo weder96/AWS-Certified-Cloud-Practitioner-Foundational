@@ -193,15 +193,31 @@ Crie uma conta no site do AWS para se familiarizar com a interface e com os serv
 
 # 1. Criação de Mapas Mentais.
 
+The mindmaps for AWS services to get AWS Certificates easier. For Vietnamese, you can see the study guide [here](http://notcuder.com/toi-da-lay-chung-chi-aws-solutions-architect-associate-nhu-the-nao/)
+
+Those images is designed with [xmind tool](http://www.xmind.net)
+
+![alt text](https://raw.githubusercontent.com/gitvani/aws-mindmap/master/images/AWS%20Network.jpg)
+
+![alt text](https://raw.githubusercontent.com/gitvani/aws-mindmap/master/images/AWS%20Storage.jpg)
+
+![alt text](https://raw.githubusercontent.com/gitvani/aws-mindmap/master/images/AWS%20Compute.jpg)
+
+![alt text](https://raw.githubusercontent.com/gitvani/aws-mindmap/master/images/AWS%20Database.jpg)
+
+![AWSManagementTools AWSManagementTools](https://raw.githubusercontent.com/gitvani/aws-mindmap/master/images/AWS%20Management%20Tools.jpg)
+
+![AWSApplication AWSApplication](https://raw.githubusercontent.com/gitvani/aws-mindmap/master/images/AWS%20Applications.jpg)
+
 
 # 2. Livros especificos (Assunto) e Questões.
 <p float="left">
-    <img width="100" style="margin-left: 20px;" src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/books/studyGuide.jpg" alt="studyGuide" />
-    <img width="100" style="margin-left: 20px;" src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/books/aws_certification.jpg" alt="aws_certification" />
-    <img width="100" style="margin-left: 20px;" src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/books/aws_2019.jpg" alt="aws_2019" />
-    <img width="100" style="margin-left: 20px;" src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/books/aws_2020.jpg" alt="aws_2020" />
-    <img width="100" style="margin-left: 20px;" src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/books/danielCarter.jpg" alt="danielCarter" />
-    <img width="100" style="margin-left: 20px;" src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/books/ips.jpg" alt="ips" />
+    <img width="100" style="margin-left: 15px;" src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/books/studyGuide.jpg" alt="studyGuide" />
+    <img width="100" style="margin-left: 15px;" src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/books/aws_certification.jpg" alt="aws_certification" />
+    <img width="100" style="margin-left: 15px;" src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/books/aws_2019.jpg" alt="aws_2019" />
+    <img width="100" style="margin-left: 15px;" src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/books/aws_2020.jpg" alt="aws_2020" />
+    <img width="100" style="margin-left: 15px;" src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/books/danielCarter.jpg" alt="danielCarter" />
+    <img width="100" style="margin-left: 15px;" src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/books/ips.jpg" alt="ips" />
 </p>
 
 # 6. Busca aulas no youtube sobre o assunto.
