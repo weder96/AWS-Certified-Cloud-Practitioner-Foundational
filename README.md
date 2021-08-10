@@ -22,10 +22,10 @@ A página de certificação Certified Cloud Practitioner fornece links para vár
 
 # O conteúdo abordado no exame é o seguinte:
 
-Domain 1 --> Cloud Concepts      --> 26% <br/>
-Domain 2 --> Security            --> 25% <br/>
-Domain 3 --> Technology          --> 33% <br/>
-Domain 4 --> Billing and Pricing --> 16% <br/>
+Domain 1 --> Cloud Concepts      --> <b>26%</b> <br/>
+Domain 2 --> Security            --> <b>25%</b> <br/>
+Domain 3 --> Technology          --> <b>33%</b> <br/>
+Domain 4 --> Billing and Pricing --> <b>16%</b> <br/>
 
 
 # Domain 1: Cloud Concepts
@@ -126,7 +126,7 @@ O portal da AWS para o Brasil é <a href="https://aws.amazon.com/pt/" alt="PT" >
 A Nuvem AWS está presente em 190 países, por meio de 13 regiões geográficas, 35 zonas de disponibilidade e mais de 50 pontos de presença locais. A Figura 05 apresenta essa abrangência global, sendo possível observar onde estão localizados os Data Centers da Amazon.
 
 
-Figura XX - Abrangência e pontos de presença locais da Nuvem AWS.
+Figura XX - Abrangência e pontos de presença locais da Nuvem AWS. <br/>
 <img src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/extra/regions.png" alt="regions" />
 Fonte: Site da Amazon. Disponível em: <https://aws.amazon.com/pt/what-is-aws>. Acesso em: Ago. de 2021.
 
@@ -135,7 +135,7 @@ São clientes da AWS empresas como Netflix, Dropbox, Airbnb e Spotify. Todas ela
 
 A AWS possui um conjunto bastante vasto de produtos e serviços de diversas categorias (processamento, rede, desenvolvimento, banco de dados, etc.), conforme podemos observar na Figura Abaixo.
 
-Figura XX - Produtos e serviços da Amazon Web Services.
+Figura XX - Produtos e serviços da Amazon Web Services. <br/>
 <img src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/extra/service.jpg" alt="service" />
 Fonte: Serviços da Amazon. Disponível em: <http://images.slideplayer.com/26/8773584/slides/slide_2.jpg>. Acesso em: Ago. de 2021.
 
@@ -170,15 +170,44 @@ Se puder, faça o exame prático disponível no site da AWS
 Crie uma conta no site do AWS para se familiarizar com a interface e com os serviços durante o estudo.
 
 # Outros meios que estou tambem utilizando:
-01: Criação de Mapas Mentais.  <br/>
-02: Livros especificos (Assunto) e Questões.  <br/>
-03: Criação de um banco de dados de questões sobre a Certificação especifica. <br/>
-04: Aprendizagem baseada em projetos <br/>
-05: Aprendizagem baseada em problemas <br/>
-06: Busca aulas no youtube sobre o assunto. <br/>
+1. Criação de Mapas Mentais.  <br/>
+2. Livros especificos (Assunto) e Questões.  <br/>
+3. Criação de um banco de dados de questões sobre a Certificação especifica. <br/>
+4. Aprendizagem baseada em projetos <br/>
+5. Aprendizagem baseada em problemas <br/>
+6. Busca aulas no youtube sobre o assunto. <br/>
 
 
-# Este espaço tem como missão 7 melhores formas de aplicar a aprendizagem ativa nos estudos?
+
+# 6. Busca aulas no youtube sobre o assunto.
+
+Canais no youtube Sobre o Assunto:
+<br/><br/>
+1. Projeto Cabeça na Nuvem<br/>
+www.cabecananuvem.com<br/>
+Introdução à conceitos de computação na nuvem e conteúdo para certificação AWS Cloud Practitioner.<br/>
+Cristiano Pelizzari<br/>
+linkedin: <a href="https://www.linkedin.com/company/cabe%C3%A7a-na-nuvem/" alt="">https://www.linkedin.com/company/cabe%C3%A7a-na-nuvem/</a>
+
+<a href="https://www.youtube.com/watch?v=68pF-rrJyqQ&list=PLMpVQWIR2lKesl8rRdVg4qbQcP64xGI2z" alt=""> PlayList com 86 videos:</a>
+Acesso em: Ago. de 2021.<br/>
+
+O que faz desta playlist completa e a questão de mostar na pratica o uso da AWS, além de ter uma parte teorica bem especifica
+e direcionada, outra vantagem e que o mesmo e em português.<br/>
+
+
+2. Freecodecamp 
+<a href="https://www.youtube.com/watch?v=3hLmDS179YE&t=896s" alt=""> AWS Certified Cloud Practitioner Training 2020 - Full Course</a>
+Acesso em: Ago. de 2021. <br/>
+
+Descrição do video:
+Este curso o ajudará a se tornar um AWS Certified Cloud Practitioner. Você obterá um entendimento completo da plataforma AWS Cloud e estará preparado para fazer o exame de certificação.
+Este conhecimento e certificação abrirão oportunidades de trabalho. Você poderá provar sua experiência em AWS e computação em nuvem.
+O exame pode ser feito em qualquer lugar como um exame supervisionado online.
+Outro detalhe legal deste video e que os comentarios, onde muitos dão creditos a aprovação por ter estudado com este formato.
+
+
+# Este espaço tem como missão usar as 7 melhores formas de aplicar a aprendizagem <b>ativa</b> nos estudos?
 1. Anote tudo!
 2. Grife e rabisque!
 3. Questione-se ao final de uma leitura ou aula
@@ -186,5 +215,8 @@ Crie uma conta no site do AWS para se familiarizar com a interface e com os serv
 5. Faça exercícios
 6. Crie mapas mentais
 7. Ensine alguém!
+
+
+
 
 
