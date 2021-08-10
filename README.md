@@ -1,3 +1,12 @@
+# Este espaço tem como missão usar as 7 melhores formas de aplicar a aprendizagem <i>ATIVA</i> nos estudos AWS Cloud Practitioner Certification. 
+1. Anote tudo!
+2. Grife e rabisque!
+3. Questione-se ao final de uma leitura ou aula
+4. Pesquise mais!
+5. Faça exercícios
+6. Crie mapas mentais
+7. Ensine alguém!
+
 # AWS Cloud Practitioner Exam Guide
 
 O exame AWS Certified Cloud Practitioner (CLF-C01) tem como objetivo para indivíduos que têm o conhecimento e as habilidades necessárias para efetivamente demonstrar uma compreensão geral da nuvem AWS, independente de funções técnicas específicas abordadas por outras certificações AWS (por exemplo,Arquiteto de soluções - Associado, Desenvolvedor - Associado ou SysOps Administrador - Associado). 
@@ -150,8 +159,8 @@ Fonte: Serviços da Amazon. Disponível em: <https://www.computerworld.com.pt/20
 
 Segundo <b>Beatriz Oliveira</b> em seu artigo de titulo: 
 
-#Como me preparei para a certificação AWS Certified Cloud Practitioner
- Disponível em: <a href="https://medium.com/sysadminas/como-me-preparei-para-a-certifica%C3%A7%C3%A3o-aws-cloud-pratictioner-358d37fb9c60" alt="Artigo Beatriz Oliveira"> (https://medium.com/sysadminas/como-me-preparei-para-a-certifica%C3%A7%C3%A3o-aws-cloud-pratictioner-358d37fb9c60) </a>
+# Como me preparei para a certificação AWS Certified Cloud Practitioner
+Disponível em: <a href="https://medium.com/sysadminas/como-me-preparei-para-a-certifica%C3%A7%C3%A3o-aws-cloud-pratictioner-358d37fb9c60" alt="Artigo Beatriz Oliveira"> (https://medium.com/sysadminas/como-me-preparei-para-a-certifica%C3%A7%C3%A3o-aws-cloud-pratictioner-358d37fb9c60) </a>
 
 
 Neste artigos ela relata dicas para quem quer tirar essa certificação, que neste momento estou seguindo:
@@ -169,7 +178,7 @@ Se puder, faça o exame prático disponível no site da AWS
 
 Crie uma conta no site do AWS para se familiarizar com a interface e com os serviços durante o estudo.
 
-# Outros meios que estou tambem utilizando:
+# Outros meios que estou utilizando tambem:
 1. Criação de Mapas Mentais.  <br/>
 2. Livros especificos (Assunto) e Questões.  <br/>
 3. Criação de um banco de dados de questões sobre a Certificação especifica. <br/>
@@ -177,7 +186,18 @@ Crie uma conta no site do AWS para se familiarizar com a interface e com os serv
 5. Aprendizagem baseada em problemas <br/>
 6. Busca aulas no youtube sobre o assunto. <br/>
 
+# 1. Criação de Mapas Mentais.
 
+
+# 2. Livros especificos (Assunto) e Questões.
+<p float="left">
+    <img width="100" src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/books/studyGuide.jpg" alt="studyGuide" />
+    <img width="100" src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/books/aws_certification.jpg" alt="aws_certification" />
+    <img width="100" src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/books/aws_2019.jpg" alt="aws_2019" />
+    <img width="100" src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/books/aws_2020.jpg" alt="aws_2020" />
+    <img width="100" src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/books/danielCarter.jpg" alt="danielCarter" />
+    <img width="100" src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/books/ips.jpg" alt="ips" />
+</p>
 
 # 6. Busca aulas no youtube sobre o assunto.
 
@@ -190,6 +210,7 @@ Cristiano Pelizzari<br/>
 linkedin: <a href="https://www.linkedin.com/company/cabe%C3%A7a-na-nuvem/" alt="">https://www.linkedin.com/company/cabe%C3%A7a-na-nuvem/</a>
 
 <a href="https://www.youtube.com/watch?v=68pF-rrJyqQ&list=PLMpVQWIR2lKesl8rRdVg4qbQcP64xGI2z" alt=""> PlayList com 86 videos:</a>
+<br/>
 Acesso em: Ago. de 2021.<br/>
 
 O que faz desta playlist completa e a questão de mostar na pratica o uso da AWS, além de ter uma parte teorica bem especifica
@@ -198,23 +219,23 @@ e direcionada, outra vantagem e que o mesmo e em português.<br/>
 
 2. Freecodecamp 
 <a href="https://www.youtube.com/watch?v=3hLmDS179YE&t=896s" alt=""> AWS Certified Cloud Practitioner Training 2020 - Full Course</a>
+<br/>
 Acesso em: Ago. de 2021. <br/>
 
-Descrição do video:
-Este curso o ajudará a se tornar um AWS Certified Cloud Practitioner. Você obterá um entendimento completo da plataforma AWS Cloud e estará preparado para fazer o exame de certificação.
-Este conhecimento e certificação abrirão oportunidades de trabalho. Você poderá provar sua experiência em AWS e computação em nuvem.
-O exame pode ser feito em qualquer lugar como um exame supervisionado online.
-Outro detalhe legal deste video e que os comentarios, onde muitos dão creditos a aprovação por ter estudado com este formato.
+Descrição do video:<br/>
+Este curso o ajudará a se tornar um AWS Certified Cloud Practitioner. Você obterá um entendimento completo da plataforma AWS Cloud e estará preparado para fazer o exame de certificação.<br/>
+Este conhecimento e certificação abrirão oportunidades de trabalho. Você poderá provar sua experiência em AWS e computação em nuvem.<br/>
+O exame pode ser feito em qualquer lugar como um exame supervisionado online.<br/>
+Outro detalhe legal deste video e que os comentarios, onde muitos dão creditos a aprovação por ter estudado com este formato.<br/>
 
+3. IT & Software
 
-# Este espaço tem como missão usar as 7 melhores formas de aplicar a aprendizagem <b>ativa</b> nos estudos?
-1. Anote tudo!
-2. Grife e rabisque!
-3. Questione-se ao final de uma leitura ou aula
-4. Pesquise mais!
-5. Faça exercícios
-6. Crie mapas mentais
-7. Ensine alguém!
+<a href="https://www.youtube.com/watch?v=h5jaLL0jHSQ&t=3939s" alt=""> AWS Certified Cloud Practitioner Training Bootcamp</a>
+<br/>
+Acesso em: Ago. de 2021. <br/>
+
+AWS Certified Cloud Practitioner Training Bootcamp
+Latest Exam Version - PREPARE and PASS the AWS Certified Cloud Practitioner (CLF-C01) Exam
 
 
 
