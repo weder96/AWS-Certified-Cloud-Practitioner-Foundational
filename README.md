@@ -7,6 +7,11 @@
 6. Crie mapas mentais
 7. Ensine alguém!
 
+# Objetivo
+Alem do objetivo acima o memso tem como organizar em um so topicos varios possibilidades de estudos, para o estudo
+da AWS Cloud Practitioner Certification, focando em outros que já relatarm como chegar lá, e também ligar conteúdos que 
+foram e poderão ser de grande ajuda, para novos estudantes.
+
 # AWS Cloud Practitioner Exam Guide
 
 O exame AWS Certified Cloud Practitioner (CLF-C01) tem como objetivo para indivíduos que têm o conhecimento e as habilidades necessárias para efetivamente demonstrar uma compreensão geral da nuvem AWS, independente de funções técnicas específicas abordadas por outras certificações AWS (por exemplo,Arquiteto de soluções - Associado, Desenvolvedor - Associado ou SysOps Administrador - Associado). 
@@ -191,12 +196,12 @@ Crie uma conta no site do AWS para se familiarizar com a interface e com os serv
 
 # 2. Livros especificos (Assunto) e Questões.
 <p float="left">
-    <img width="100" src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/books/studyGuide.jpg" alt="studyGuide" />
-    <img width="100" src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/books/aws_certification.jpg" alt="aws_certification" />
-    <img width="100" src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/books/aws_2019.jpg" alt="aws_2019" />
-    <img width="100" src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/books/aws_2020.jpg" alt="aws_2020" />
-    <img width="100" src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/books/danielCarter.jpg" alt="danielCarter" />
-    <img width="100" src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/books/ips.jpg" alt="ips" />
+    <img width="100" style="margin-left: 20px;" src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/books/studyGuide.jpg" alt="studyGuide" />
+    <img width="100" style="margin-left: 20px;" src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/books/aws_certification.jpg" alt="aws_certification" />
+    <img width="100" style="margin-left: 20px;" src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/books/aws_2019.jpg" alt="aws_2019" />
+    <img width="100" style="margin-left: 20px;" src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/books/aws_2020.jpg" alt="aws_2020" />
+    <img width="100" style="margin-left: 20px;" src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/books/danielCarter.jpg" alt="danielCarter" />
+    <img width="100" style="margin-left: 20px;" src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/books/ips.jpg" alt="ips" />
 </p>
 
 # 6. Busca aulas no youtube sobre o assunto.
