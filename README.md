@@ -220,6 +220,13 @@ Those images is designed with [xmind tool](http://www.xmind.net)
     <img width="100" style="margin-left: 15px;" src="https://github.com/weder96/aws_mind_maps_practitioner/blob/main/images/books/ips.jpg" alt="ips" />
 </p>
 
+# 3. Criação de um banco de dados de questões sobre a Certificação especifica. 
+
+<a href="https://www.awslagi.com/practice-questions/"  alt="practice-questions">practice-questions</a><br/>
+Acesso em: Ago. de 2021.<br/>
+O mesmo tem varias questões pra treino, no caso de AWS Cloud Practitioner, o site possue 3 Quiz e mais 6 Pdfs, com as questões.
+
+
 # 6. Busca aulas no youtube sobre o assunto.
 
 Canais no youtube Sobre o Assunto:
@@ -259,6 +266,17 @@ AWS Certified Cloud Practitioner Training Bootcamp
 Latest Exam Version - PREPARE and PASS the AWS Certified Cloud Practitioner (CLF-C01) Exam
 
 
+# Calculator
 
+https://calculator.aws/#/
+
+
+# Labs 
+https://amazon.qwiklabs.com/
+
+
+
+# Algumas dos caminhos já percorridos
+https://blogs.sap.com/2021/05/24/get-certified-aws-certified-cloud-practitioner-clf-c01/
 
 
