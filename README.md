@@ -25,6 +25,8 @@ A certificação do AWS Cloud Practitioner é um ótimo ponto de entrada no mund
 Nosso foco e a AWS Cloud Practitioner Certification, que e a porta de entrada para as demais. 
 
 # O que é AWS Cloud Practitioner Certification?
+<details>
+<summary> O que é AWS Cloud Practitioner Certification? </summary>
 
 A Amazon tem vários caminhos de certificação de nuvem AWS. 
 A certificação AWS Certified Cloud Practitioner é uma certificação de nível básico que se destina a demonstrar um nível básico de conhecimento e habilidades da nuvem Amazon AWS. 
@@ -33,6 +35,8 @@ Este exame é adequado para profissionais em funções técnicas, gerenciais e d
 Para obter a certificação, você deve passar em um único exame. A Amazon recomenda que você tenha pelo menos <b>6 meses de experiência</b> antes de fazer o exame. Não tinha experiência anterior com o Amazon AWS antes de estudar para o exame. Eu, no entanto busco de todas as formas evoluir.
 
 A página de certificação Certified Cloud Practitioner fornece links para vários recursos de estudo, incluindo white papers da AWS, links para reservar o exame, exemplos de perguntas de teste etc.
+
+</details>
 
 # O conteúdo abordado no exame é o seguinte:
 
@@ -298,110 +302,121 @@ There are multiple reasons why the cloud market is growing so fast. Some of them
     - System administration staff
     - Faster time to market
 
-# The five pillars of a well-architected framework
-<a href="https://docs.aws.amazon.com/wellarchitected/latest/framework/wellarchitected-framework.pdf#welcome" alt=""> 
-The five pillars of a well-architected framework (View PDF)</a>
+# The Six pillars of a well-architected framework
+<a href="https://aws.amazon.com/blogs/apn/the-6-pillars-of-the-aws-well-architected-framework/" alt=""> 
+    The Six pillars of a well-architected framework</a>
 <br/>
-Acesso em: Novembro. de 2021.<br/>
+Acesso em: Junho de 2022.<br/>
 
-That all leads us nicely into this section. The reason the cloud in general and AWS
-in particular are so popular is that they simplify the development of well-architected
-frameworks. If there is one must-read white paper from AWS, it is the paper titled
-AWS Well-Architected Framework, which spells out the five pillars of a well-architected
-framework. The full paper can be found here:<br/>
+Creating a software system is a lot like constructing a building. If the foundation is not solid, structural problems can undermine the integrity and function of the building.
 
-# First pillar – security
-In both on-premises and cloud architectures, security should always be a high priority. 
-All aspects of security should be considered, including data encryption and protection, access
-management, infrastructure security, monitoring, and breach detection and inspection.
-<br/>
-To enable system security and to guard against nefarious actors and vulnerabilities, AWS
-recommends these<br/>
-- Architectural principles:
-    - Always enable traceability.
-    - Apply security at all levels.
-    - Implement the principle of least privilege.
-    - Secure the system at all levels: application, data, operating system, and hardware.
-    - Automate security best practices.
-Almost as important as security is the next pillar – reliability.
+When building technology solutions on Amazon Web Services (AWS), if you neglect the six pillars of operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability, it can become challenging to build a system that delivers on your expectations and requirements.
 
-# Second pillar – reliability
-Another characteristic of a well-architected framework is the minimization or elimination
-of single points of failure. Ideally, every component should have a backup, and the backup
-should be able to come online as quickly as possible and in an automated manner, without
-the need for human intervention. Another applicable concept to support reliability is
-the idea of self-healing systems. An example of this is how Amazon S3 handles data
-replication. At any given time, there are at least six copies of any object stored in Amazon
-S3. If, for some reason, one of the resources storing one of these copies fails, AWS will
-automatically recover from this failure, mark that resource as unavailable, and create
-another copy of the object using a healthy resource to keep the number of copies at six.
-When using AWS services that are not managed by AWS and are instead managed by
-you, make sure that you are following a similar pattern to avoid data loss and service
-interruption.
+Incorporating these pillars into your architecture helps produce stable and efficient systems. This allows you to focus on the other aspects of design, such as functional requirements.
+
+The AWS Well-Architected Framework helps cloud architects build the most secure, high-performing, resilient, and efficient infrastructure possible for their applications. The framework provides a consistent approach for customers and AWS Partners to evaluate architectures, and provides guidance to implement designs that scale with your application needs over time.
+
+In this post, we provide an overview of the Well-Architected Framework’s six pillars and explore design principles and best practices. You can find more details—including definitions, FAQs, and resources—in each pillar’s whitepaper we link to below.
+
+:<br/>
+!Ref=(https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html)
 
 
-- The well-architected framework paper recommends these design principles to enhance reliability:
-    - Continuously test backup and recovery processes.
-    - Design systems so that they can automatically recover from a single component failure.
-    - Leverage horizontal scalability whenever possible to enhance overall system availability.
-    - Use automation to provision and shutdown resources depending on traffic and usage to minimize resource bottlenecks.
-    - Manage change with automation.
+# 1. Operational Excellence
+The Operational Excellence pillar includes the ability to support development and run workloads effectively, gain insight into their operation, and continuously improve supporting processes and procedures to delivery business value. You can find prescriptive guidance on implementation in the Operational Excellence Pillar whitepaper.
 
-Whenever possible, changes to the infrastructure should occur in an automated fashion.
+## Design Principles
+There are five design principles for operational excellence in the cloud:
+- Perform operations as code
+- Make frequent, small, reversible changes
+- Refine operations procedures frequently
+- Anticipate failure
+- Learn from all operational failures
+
+## Best Practices
+Operations teams need to understand their business and customer needs so they can support business outcomes. Ops creates and uses procedures to respond to operational events, and validates their effectiveness to support business needs. Ops also collects metrics that are used to measure the achievement of desired business outcomes.
+
+Everything continues to change—your business context, business priorities, and customer needs. It’s important to design operations to support evolution over time in response to change, and to incorporate lessons learned through their performance.
+
+# 2. Security
+The Security pillar includes the ability to protect data, systems, and assets to take advantage of cloud technologies to improve your security. You can find prescriptive guidance on implementation in the Security Pillar whitepaper.
+
+## Design Principles
+There are seven design principles for security in the cloud:
+- Implement a strong identity foundation
+- Enable traceability
+- Apply security at all layers
+- Automate security best practices
+- Protect data in transit and at rest
+- Keep people away from data
+- Prepare for security events
+
+## Best Practices
+Before you architect any workload, you need to put in place practices that influence security. You’ll want to control who can do what. In addition, you want to be able to identify security incidents, protect your systems and services, and maintain the confidentiality and integrity of data through data protection.
+
+You should have a well-defined and practiced process for responding to security incidents. These tools and techniques are important because they support objectives such as preventing financial loss or complying with regulatory obligations.
+
+The AWS Shared Responsibility Model enables organizations that adopt the cloud to achieve their security and compliance goals. Because AWS physically secures the infrastructure that supports our cloud services, as an AWS customer you can focus on using services to accomplish your goals. The AWS Cloud also provides greater access to security data and an automated approach to responding to security events.
 
 
-# Third pillar – performance efficiency
-In some respects, over-provisioning resources is just as bad as not having enough capacity
-to handle your workloads. Launching an instance that is constantly idle or almost idle is a
-sign of bad design. Resources should not be at full capacity, but they should be efficiently
-utilized. AWS provides a variety of features and services to assist in the creation of
-architectures with high efficiency. However, we still have a responsibility to ensure that the
-architectures we design are suitable and correctly sized for our applications.
-<br/>
-- When it comes to performance efficiency, the recommended design best practices are as follows:
-    - Democratize advanced technologies.
-    - Take advantage of AWS's global infrastructure to deploy your application globally with minimal cost and to provide low latency.
-    - Leverage serverless architectures wherever possible.
-    - Deploy multiple configurations to see which one delivers better performance.
-    - Efficiency is closely related to the next pillar – cost optimization.
+# 3. Reliability
+The Reliability pillar encompasses the ability of a workload to perform its intended function correctly and consistently when it’s expected to. This includes the ability to operate and test the workload through its total lifecycle. You can find prescriptive guidance on implementation in the Reliability Pillar whitepaper.
 
+## Design Principles
+There are five design principles for reliability in the cloud:
 
-# Fourth pillar – cost optimization
-This pillar is related to the third pillar. If your architecture is efficient and can accurately
-handle varying application loads and adjust as traffic changes, it will follow that your costs
-will be minimized if your architecture can downshift when traffic slows down.
-Additionally, your architecture should be able to identify when resources are not being
-used at all and allow you to stop them or, even better, stop these unused compute
-resources for you. In this department, AWS also provides you with the ability to turn on
-monitoring tools that will automatically shut down resources if they are not being utilized.
-We strongly encourage you to adopt a mechanism to stop these resources once they are
-identified as idle. This is especially useful in development and test environments.
+Automatically recover from failure
+- Test recovery procedures
+- Scale horizontally to increase aggregate workload availability
+- Stop guessing capacity
+- Manage change in automation
 
-- To enhance cost optimization, these principles are suggested:
-    - Use a consumption model.
-    - Leverage economies of scale whenever possible.
-    - Reduce expenses by limiting the use of company-owned data centers.
-    - Constantly analyze and account for infrastructure expenses.
+## Best Practices
+Before building any system, foundational requirements that influence reliability should be in place. For example, you must have sufficient network bandwidth to your data center. These requirements are sometimes neglected (because they are beyond a single project’s scope). With AWS, however, most of the foundational requirements are already incorporated or can be addressed as needed.
 
-Whenever possible, use AWS-managed services instead of services that you need to manage yourself. This should lower your administration expenses.
+The cloud is designed to be nearly limitless, so it’s the responsibility of AWS to satisfy the requirement for sufficient networking and compute capacity, leaving you free to change resource size and allocations on demand.
 
-# Fifth pillar – operational excellence
-The operational excellence of a workload should be measured across these dimensions:
-    1. Agility
-    2. Reliability
-    3.  Performance
+A reliable workload starts with upfront design decisions for both software and infrastructure. Your architecture choices will impact your workload behavior across all six AWS Well-Architected pillars. For reliability, there are specific patterns you must follow, such as loosely coupled dependencies, graceful degradation, and limiting retries.
 
-The ideal way to optimize these metrics is to standardize and automate the management of these workloads. To achieve operational excellence. 
-- AWS recommends these principles:
-    - Provision infrastructure through code (for example, via CloudFormation).
-    - Align operations and applications with business requirements and objectives.
-    - Change your systems by making incremental and regular changes.
-    - Constantly test both normal and abnormal scenarios.
-    - Record lessons learned from operational events and failures.
-    - Write down and keep standard operations procedures manual up to date.
+Changes to your workload or its environment must be anticipated and accommodated to achieve reliable operation of the workload. Changes include those imposed on your workload, like a spikes in demand, as well as those from within such as feature deployments and security patches.
 
-AWS users need to constantly evaluate their systems to ensure that they are following the recommended principles of the AWS Well-Architected Framework paper and that they comply with and follow architecture best practices.
+Low-level hardware component failures are something to be dealt with every day in an on-premises data center. In the cloud, however, these are often abstracted away. Regardless of your cloud provider, there is the potential for failures to impact your workload. You must therefore take steps to implement resiliency in your workload, such as fault isolation, automated failover to healthy resources, and a disaster recovery strategy.
 
+# 4. Performance Efficiency
+The Performance Efficiency pillar includes the ability to use computing resources efficiently to meet system requirements, and to maintain that efficiency as demand changes and technologies evolve. You can find prescriptive guidance on implementation in the Performance Efficiency Pillar whitepaper.
+
+## Design Principles
+There are five design principles for performance efficiency in the cloud:
+- Democratize advanced technologies
+- Go global in minutes
+- Use serverless architectures
+- Experiment more often
+- Consider mechanical sympathy
+
+## Best Practices
+Take a data-driven approach to building a high-performance architecture. Gather data on all aspects of the architecture, from the high-level design to the selection and configuration of resource types.
+
+Reviewing your choices on a regular basis ensures you are taking advantage of the continually evolving AWS Cloud. Monitoring ensures you are aware of any deviance from expected performance. Make trade-offs in your architecture to improve performance, such as using compression or caching, or relaxing consistency requirements
+
+The optimal solution for a particular workload varies, and solutions often combine multiple approaches. AWS Well-Architected workloads use multiple solutions and enable different features to improve performance
+
+# 5. Cost Optimization
+The Cost Optimization pillar includes the ability to run systems to deliver business value at the lowest price point. You can find prescriptive guidance on implementation in the Cost Optimization Pillar whitepaper.
+
+## Design Principles
+There are five design principles for cost optimization in the cloud:
+- Implement cloud financial management
+- Adopt a consumption model
+- Measure overall efficiency
+- Stop spending money on undifferentiated heavy lifting
+- Analyze and attribute expenditure
+
+## Best Practices
+As with the other pillars, there are trade-offs to consider. For example, do you want to optimize for speed to market or for cost? In some cases, it’s best to optimize for speed—going to market quickly, shipping new features, or simply meeting a deadline—rather than investing in up-front cost optimization.
+
+Design decisions are sometimes directed by haste rather than data, and as the temptation always exists to overcompensate rather than spend time benchmarking for the most cost-optimal deployment. This might lead to over-provisioned and under-optimized deployments.
+
+Using the appropriate services, resources, and configurations for your workloads is key to cost savings
 
 # Regions, Availability Zones, and Local Zones
 How can Amazon provide such reliable service across the globe? How can they offer
@@ -611,12 +626,19 @@ hardware required for these application services, while you provision and use wh
 
 ## THE SIX ADVANTAGES
 - AWS promote the six advantages of cloud:
-    - 1. Trade capital expense for variable expense
-    - 2. Benefit from massive economies of scale
-    - 3. Stop guessing about capacity
-    - 4. Increase speed and agility
-    - 5. Stop spending money running and maintaining data centers
-    - 6. Go global in minutes
+    - <b>1. Trade capital expense for variable expense </b> – Instead of having to invest heavily in data centers and servers before you know how you’re going to use    them, you can pay only when you consume computing resources, and pay only for how much you consume.
+
+    - <b>2. Benefit from massive economies of scale </b> – By using cloud computing, you can achieve a lower variable cost than you can get on your own. Because usage from hundreds of thousands of customers is aggregated in the cloud, providers such as AWS can achieve higher economies of scale, which translates into lower pay as-you-go prices.
+
+    - <b>3. Stop guessing about capacity </b> – Eliminate guessing on your infrastructure capacity needs. When you make a capacity decision prior to deploying an application, you often end up either sitting on expensive idle resources or dealing with limited capacity. With cloud computing, these problems go away. You can access as much or as little capacity as you need, and scale up and down as required with only a few minutes’ notice.
+
+    - <b>4. Increase speed and agility </b> – In a cloud computing environment, new IT resources are only a click away, which means that you reduce the time to make those resources available to your developers from weeks to just minutes. This results in a dramatic increase in agility for the organization, since the cost and time it takes to experiment and develop is significantly lower.
+
+    - <b>5. Stop spending money running and maintaining data centers </b> – Focus on projects that differentiate your business, not the infrastructure. Cloud computing lets you focus on your own customers, rather than on the heavy lifting of racking, stacking, and powering servers.
+
+    - <b>6. Go global in minutes </b> – Easily deploy your application in multiple regions around the world with just a few clicks. This means you can provide lower latency and a better experience for your customers at minimal cost.
+
+!Ref(https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html)
 
 ### TRADE CAPITAL EXPENSE FOR VARIABLE EXPENSE
 Instead of having to invest heavily in data centers and servers before you know how you’re going to
@@ -687,4 +709,1020 @@ sought for its ability to provide dedicated resources.
 
 In most cases, this deployment model is the same as legacy IT infrastructure while using application
 management and virtualization technologies to try and increase resource utilization.
+
+
+# AWS Analytics Services
+
+
+The are several AWS Analytics services and these include:
+
+Amazon Athena
+Amazon EMR
+Amazon CloudSearch
+Amazon Opensearch Service
+Amazon Kinesis
+Amazon QuickSight
+Amazon Data Pipeline
+AWS Glue
+AWS Lake Formation
+Amazon MSK
+In this article we will focus on Athena, EMR, Glue and Kinesis as these are the services that are most likely to come up on the AWS Certified Cloud Practitioner exam. You may also want to follow the links to the other services and read up to understand what they are at a high-level.
+
+
+## Amazon Elastic Map Reduce
+Amazon EMR is a web service that enables businesses, researchers, data analysts, and developers to easily and cost-effectively process vast amounts of data.
+
+EMR utilizes a hosted Hadoop framework running on Amazon EC2 and Amazon S3.
+
+Managed Hadoop framework for processing huge amounts of data.
+
+Also support Apache Spark, HBase, Presto and Flink.
+
+Most commonly used for log analysis, financial analysis, or extract, translate and loading (ETL) activities.
+
+A Step is a programmatic task for performing some process on the data (e.g. count words).
+
+A cluster is a collection of EC2 instances provisioned by EMR to run your Steps.
+
+EMR uses Apache Hadoop as its distributed data processing engine, which is an open source, Java software framework that supports data-intensive distributed applications running on large clusters of commodity hardware.
+
+EMR is a good place to deploy Apache Spark, an open-source distributed processing used for big data workloads which utilizes in-memory caching and optimized query execution.
+
+You can also launch Presto clusters. Presto is an open-source distributed SQL query engine designed for fast analytic queries against large datasets.
+
+EMR launches all nodes for a given cluster in the same Amazon EC2 Availability Zone.
+
+You can access Amazon EMR by using the AWS Management Console, Command Line Tools, SDKS, or the EMR API.
+
+With EMR you have access to the underlying operating system (you can SSH in).
+
+## Amazon Athena
+Amazon Athena is an interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL.
+
+Athena is serverless, so there is no infrastructure to manage, and you pay only for the queries that you run.
+
+Athena is easy to use – simply point to your data in Amazon S3, define the schema, and start querying using standard SQL.
+
+Amazon Athena uses Presto with full standard SQL support and works with a variety of standard data formats, including CSV, JSON, ORC, Apache Parquet and Avro.
+
+While Amazon Athena is ideal for quick, ad-hoc querying and integrates with Amazon QuickSight for easy visualization, it can also handle complex analysis, including large joins, window functions, and arrays.
+
+Amazon Athena uses a managed Data Catalog to store information and schemas about the databases and tables that you create for your data stored in Amazon S3.
+
+##  AWS Glue
+AWS Glue is a fully managed, pay-as-you-go, extract, transform, and load (ETL) service that automates the time-consuming steps of data preparation for analytics.
+
+AWS Glue automatically discovers and profiles data via the Glue Data Catalog, recommends and generates ETL code to transform your source data into target schemas.
+
+AWS Glue runs the ETL jobs on a fully managed, scale-out Apache Spark environment to load your data into its destination.
+
+AWS Glue also allows you to setup, orchestrate, and monitor complex data flows.
+
+You can create and run an ETL job with a few clicks in the AWS Management Console.
+
+Use AWS Glue to discover properties of data, transform it, and prepare it for analytics.
+
+Glue can automatically discover both structured and semi-structured data stored in data lakes on Amazon S3, data warehouses in Amazon Redshift, and various databases running on AWS.
+
+It provides a unified view of data via the Glue Data Catalog that is available for ETL, querying and reporting using services like Amazon Athena, Amazon EMR, and Amazon Redshift Spectrum.
+
+Glue automatically generates Scala or Python code for ETL jobs that you can further customize using tools you are already familiar with.
+
+AWS Glue is serverless, so there are no compute resources to configure and manage.
+
+## Data Analysis and Query Use Cases
+Query services like Amazon Athena, data warehouses like Amazon Redshift, and sophisticated data processing frameworks like Amazon EMR, all address different needs and use cases.
+
+Amazon Redshift provides the fastest query performance for enterprise reporting and business intelligence workloads, particularly those involving extremely complex SQL with multiple joins and sub-queries.
+
+Amazon EMR makes it simple and cost effective to run highly distributed processing frameworks such as Hadoop, Spark, and Presto when compared to on-premises deployments. Amazon EMR is flexible – you can run custom applications and code, and define specific compute, memory, storage, and application parameters to optimize your analytic requirements.
+
+Amazon Athena provides the easiest way to run ad-hoc queries for data in S3 without the need to setup or manage any servers.
+
+The table below shows the primary use case and situations for using a few AWS query and analytics services:
+
+AWS Service	Primary Use Case	When to use
+Amazon Athena	Query	Run interactive queries against data directly in Amazon S3 without worrying about formatting data or managing infrastructure. Can use with other services such as Amazon RedShift
+Amazon RedShift	Data Warehouse	Pull data from many sources, format and organize it, store it, and support complex, high speed queries that produce business reports.
+Amazon EMR	Data Processing	Highly distributed processing frameworks such as Hadoop, Spark, and Presto. Run a wide variety of scale-out data processing tasks for applications such as machine learning, graph analytics, data transformation, streaming data.
+AWS Glue	ETL Service	Transform and move data to various destinations. Used to prepare and load data for analytics. Data source can be S3, RedShift or another database. Glue Data Catalog can be queried by Athena, EMR and RedShift Spectrum
+
+
+
+## Amazon Kinesis
+Amazon Kinesis makes it easy to collect, process, and analyze real-time, streaming data so you can get timely insights and react quickly to new information.
+
+Collection of services for processing streams of various data.
+
+Data is processed in “shards”.
+
+There are four types of Kinesis service, and these are detailed below.
+
+## Kinesis Video Streams
+Kinesis Video Streams makes it easy to securely stream video from connected devices to AWS for analytics, machine learning (ML), and other processing.
+
+Durably stores, encrypts, and indexes video data streams, and allows access to data through easy-to-use APIs.
+
+Producers provide data streams.
+
+Stores data for 24 hours by default, up to 7 days.
+
+Consumers receive and process data.
+
+Can have multiple shards in a stream.
+
+Supports encryption at rest with server-side encryption (KMS) with a customer master key.
+
+## Kinesis Data Streams
+Kinesis Data Streams enables you to build custom applications that process or analyze streaming data for specialized needs.
+
+Kinesis Data Streams enables real-time processing of streaming big data.
+
+Kinesis Data Streams is useful for rapidly moving data off data producers and then continuously processing the data.
+
+Kinesis Data Streams stores data for later processing by applications (key difference with Firehose which delivers data directly to AWS services).
+
+Common use cases include:
+
+Accelerated log and data feed intake.
+Real-time metrics and reporting.
+Real-time data analytics.
+Complex stream processing.
+
+
+## Kinesis Data Firehose
+Kinesis Data Firehose is the easiest way to load streaming data into data stores and analytics tools.
+
+Captures, transforms, and loads streaming data.
+
+Enables near real-time analytics with existing business intelligence tools and dashboards.
+
+Kinesis Data Streams can be used as the source(s) to Kinesis Data Firehose.
+
+You can configure Kinesis Data Firehose to transform your data before delivering it.
+
+With Kinesis Data Firehose you don’t need to write an application or manage resources.
+
+Firehose can batch, compress, and encrypt data before loading it.
+
+Firehose synchronously replicates data across three AZs as it is transported to destinations.
+
+Each delivery stream stores data records for up to 24 hours.
+
+## Kinesis Data Analytics
+Amazon Kinesis Data Analytics is the easiest way to process and analyze real-time, streaming data.
+
+Can use standard SQL queries to process Kinesis data streams.
+
+Provides real-time analysis.
+
+Use cases:
+
+Generate time-series analytics.
+Feed real-time dashboards.
+Create real-time alerts and notifications.
+Quickly author and run powerful SQL code against streaming sources.
+
+Can ingest data from Kinesis Streams and Kinesis Firehose.
+
+Output to S3, RedShift, Elasticsearch and Kinesis Data Streams.
+
+Sits over Kinesis Data Streams and Kinesis Data Firehose.
+
+
+# AWS Database Services
+
+AWS Databases for the AWS Cloud Practitioner exam. This is one of the key technology areas covered in the exam blueprint.
+
+## Use Cases For Different Database Types
+
+The table below provides guidance on the typical use cases for several AWS database/data store services:
+
+-------------------------------------------------------------------------------------------------------------------------
+### Database on EC2	
+- Full control over instance and database
+- Preferred DB not available under RDS
+
+
+### Amazon RDS	
+- Need traditional relational database for OLTP
+- Your data is well-formed and structured
+- Existing applications requiring RDBMS
+
+### Amazon DynamoDB	
+- Name/value pair data
+- Unpredictable data structure
+- In-memory performance with persistence
+- High I/O needs
+- Require dynamic scaling
+
+
+### Amazon RedShift	
+- Data warehouse for large volumes of aggregated data
+- Primarily OLAP workloads
+
+### Amazon Neptune	
+- Relationships between objects are of high value
+
+### Amazon ElastiCache	
+- Fast temporary storage for small amounts of data
+- Highly volatile data (non-persistent)
+
+### Amazon S3	
+- Binary large objects (BLOBs)
+- Static websites
+
+
+We’ll now cover several of these database types that may come up on the exam.
+
+## Amazon Relational Database Service (RDS)
+Amazon Relational Database Service (Amazon RDS) is a managed service that makes it easy to set up, operate, and scale a relational database in the cloud.
+
+Relational databases are known as Structured Query Language (SQL) databases.
+
+Non-relational databases are known as NoSQL databases.
+
+RDS is an Online Transaction Processing (OLTP) type of database.
+
+### RDS features and benefits:
+- SQL type of database.
+- Can be used to perform complex queries and joins.
+- Easy to setup, highly available, fault tolerant, and scalable.
+- Used when data is clearly defined.
+- Common use cases include online stores and banking systems.
+
+
+### Amazon RDS supports the following database engines:
+- SQL Server.
+- Oracle.
+- MySQL Server.
+- PostgreSQL.
+- Aurora.
+- MariaDB.
+- Aurora is Amazon’s proprietary database.
+
+RDS is a fully managed service and you do not have access to the underlying EC2 instance (no root access).
+
+### The RDS service includes the following:
+- Security and patching of the DB instances.
+- Automated backup for the DB instances.
+- Software updates for the DB engine.
+- Easy scaling for storage and compute.
+- Multi-AZ option with synchronous replication.
+- Automatic failover for Multi-AZ option.
+- Read replicas option for read heavy workloads.
+- A DB instance is a database environment in the cloud with the compute and storage resources you specify.
+
+### Encryption:
+
+- You can encrypt your Amazon RDS instances and snapshots at rest by enabling the encryption option for your Amazon RDS DB instance.
+- Encryption at rest is supported for all DB types and uses AWS KMS.
+- You cannot encrypt an existing DB, you need to create a snapshot, copy it, encrypt the copy, then build an encrypted DB from the snapshot.
+
+### DB Subnet Groups:
+
+- A DB subnet group is a collection of subnets (typically private) that you create in a VPC and that you then designate for your DB instances.
+- Each DB subnet group should have subnets in at least two Availability Zones in each region.
+- It is recommended to configure a subnet group with subnets in each AZ (even for standalone instances).
+
+### AWS Charge for:
+- DB instance hours (partial hours are charged as full hours).
+- Storage GB/month.
+- I/O requests/month – for magnetic storage.
+- Provisioned IOPS/month – for RDS provisioned IOPS SSD.
+- Egress data transfer.
+- Backup storage (DB backups and manual snapshots).
+
+
+### Scalability:
+- You can only scale RDS up (compute and storage).
+- You cannot decrease the allocated storage for an RDS instance.
+- You can scale storage and change the storage type for all DB engines except MS SQL.
+
+### RDS provides multi-AZ for disaster recovery which provides fault tolerance across availability zones:
+- Multi-AZ RDS creates a replica in another AZ and synchronously replicates to it (DR only).
+- There is an option to choose multi-AZ during the launch wizard.
+- AWS recommends the use of provisioned IOPS storage for multi-AZ RDS DB instances.
+- Each AZ runs on its own physically distinct, independent infrastructure, and is engineered to be highly reliable.
+- You cannot choose which AZ in the region will be chosen to create the standby DB instance.
+
+### Read Replicas – provide improved performance for reads:
+- Read replicas are used for read heavy DBs and replication is asynchronous.
+- Read replicas are for workload sharing and offloading.
+- Read replicas provide read-only DR.
+- Read replicas are created from a snapshot of the master instance.
+- Must have automated backups enabled on the primary (retention period > 0).
+
+amazon-rds-scaling-dr
+
+### Amazon DynamoDB
+Amazon DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability.
+
+## Dynamo DB features and benefits:
+- NoSQL type of database (non-relational).
+- Fast, highly available, and fully managed.
+- Used when data is fluid and can change.
+- Common use cases include social networks and web analytics.
+
+Push button scaling means that you can scale the DB at any time without incurring downtime.
+
+SSD based and uses limited indexing on attributes for performance.
+
+DynamoDB is a Web service that uses HTTP over SSL (HTTPS) as a transport and JSON as a message serialization format.
+
+Amazon DynamoDB stores three geographically distributed replicas of each table to enable high availability and data durability.
+
+Data is synchronously replicated across 3 facilities (AZs) in a region.
+
+## Cross-region replication allows you to replicate across regions:
+- Amazon DynamoDB global tables provides a fully managed solution for deploying a multi-region, multi-master database.
+- When you create a global table, you specify the AWS regions where you want the table to be available.
+- DynamoDB performs all the necessary tasks to create identical tables in these regions and propagate ongoing data changes to all of them.
+
+
+Provides low read and write latency.
+
+Scale storage and throughput up or down as needed without code changes or downtime.
+
+DynamoDB is schema-less.
+
+DynamoDB can be used for storing session state.
+
+Provides two read models.
+
+## Eventually consistent reads (Default):
+- The eventual consistency option maximizes your read throughput (best read performance).
+- An eventually consistent read might not reflect the results of a recently completed write.
+- Consistency across all copies reached within 1 second.
+
+## Strongly consistent reads:
+
+- A strongly consistent read returns a result that reflects all writes that received a successful response prior to the read (faster consistency).
+
+Amazon DynamoDB Accelerator (DAX) is a fully managed, highly available, in-memory cache for DynamoDB that delivers up to a 10x performance improvement – from milliseconds to microseconds – even at millions of requests per second.
+
+# Amazon RedShift
+Amazon Redshift is a fast, fully managed data warehouse that makes it simple and cost-effective to analyze all your data using standard SQL and existing Business Intelligence (BI) tools.
+
+RedShift is a SQL based data warehouse used for analytics applications.
+
+RedShift is a relational database that is used for Online Analytics Processing (OLAP) use cases.
+
+RedShift is used for running complex analytic queries against petabytes of structured data, using sophisticated query optimization, columnar storage on high-performance local disks, and massively parallel query execution.
+
+RedShift is ideal for processing large amounts of data for business intelligence.
+
+RedShift is 10x faster than a traditional SQL DB.
+
+## RedShift uses columnar data storage:
+- Data is stored sequentially in columns instead of rows.
+- Columnar based DB is ideal for data warehousing and analytics.
+- Requires fewer I/Os which greatly enhances performance.
+
+## RedShift provides advanced compression:
+- Data is stored sequentially in columns which allows for much better performance and less storage space.
+- RedShift automatically selects the compression scheme.
+
+RedShift uses replication and continuous backups to enhance availability and improve durability and can automatically recover from component and node failures.
+
+## RedShift always keeps three copies of your data:
+- The original.
+- A replica on compute nodes (within the cluster).
+- A backup copy on S3.
+
+## RedShift provides continuous/incremental backups:
+- Multiple copies within a cluster.
+- Continuous and incremental backups to S3.
+- Continuous and incremental backups across regions.
+- Streaming restore.
+
+## RedShift provides fault tolerance for the following failures:
+- Disk failures.
+- Nodes failures.
+- Network failures.
+- AZ/region level disasters.
+
+# Amazon ElastiCache
+ElastiCache is a web service that makes it easy to deploy and run Memcached or Redis protocol-compliant server nodes in the cloud.
+
+The in-memory caching provided by ElastiCache can be used to significantly improve latency and throughput for many read-heavy application workloads or compute-intensive workloads.
+
+Best for scenarios where the DB load is based on Online Analytics Processing (OLAP) transactions.
+
+## The following table describes a few typical use cases for ElastiCache:
+
+### Web session store	
+- In cases with load-balanced web servers, store web session information in Redis so if a server is lost, the session info is not lost, and another web server can pick it up
+
+### Database caching	
+- Use Memcached in front of AWS RDS to cache popular queries to offload work from RDS and return results faster to users
+
+### Leaderboards	
+- Use Redis to provide a live leaderboard for millions of users of your mobile app
+
+### Streaming data dashboards	
+- Provide a landing spot for streaming sensor data on the factory floor, providing live real-time dashboard displays
+
+
+ElastiCache EC2 nodes cannot be accessed from the Internet, nor can they be accessed by EC2 instances in other VPCs.
+
+Can be on-demand or reserved instances too (but not Spot instances).
+
+ElastiCache can be used for storing session state.
+
+## There are two types of ElastiCache engine:
+- Memcached – simplest model, can run large nodes with multiple cores/threads, can be scaled in and out, can cache objects such as DBs.
+- Redis – complex model, supports encryption, master / slave replication, cross AZ (HA), automatic failover and backup/restore.
+
+amazon-elasticache
+
+
+# Amazon EMR
+Amazon EMR is a web service that enables businesses, researchers, data analysts, and developers to process vast amounts of data easily and cost-effectively.
+
+EMR utilizes a hosted Hadoop framework running on Amazon EC2 and Amazon S3.
+
+Managed Hadoop framework for processing huge amounts of data.
+
+Also support Apache Spark, HBase, Presto and Flink.
+
+Most commonly used for log analysis, financial analysis, or extract, translate and loading (ETL) activities.
+
+
+# Shared Responsibility Model
+!Ref(https://aws.amazon.com/compliance/shared-responsibility-model/)
+
+Security and Compliance is a shared responsibility between AWS and the customer. 
+
+This shared model can help relieve the customer’s operational burden as AWS operates, manages and controls the components from the host operating system and virtualization layer down to the physical security of the facilities in which the service operates. 
+
+The customer assumes responsibility and management of the guest operating system (including updates and security patches), other associated application software as well as the configuration of the AWS provided security group firewall. 
+
+Customers should carefully consider the services they choose as their responsibilities vary depending on the services used, the integration of those services into their IT environment, and applicable laws and regulations. 
+
+The nature of this shared responsibility also provides the flexibility and customer control that permits the deployment. As shown in the chart below, this differentiation of responsibility is commonly referred to as Security “of” the Cloud versus Security “in” the Cloud.
+
+AWS responsibility “Security of the Cloud” - AWS is responsible for protecting the infrastructure that runs all of the services offered in the AWS Cloud. 
+
+This infrastructure is composed of the hardware, software, networking, and facilities that run AWS Cloud services.
+
+<img src="./images/Shared_Responsibility_Model_V2.jpg" alt="Shared_Responsibility_Model_V2" />
+
+
+AWS responsibility “Security of the Cloud” - AWS is responsible for protecting the infrastructure that runs all of the services offered in the AWS Cloud. This infrastructure is composed of the hardware, software, networking, and facilities that run AWS Cloud services.
+
+Customer responsibility “Security in the Cloud” – Customer responsibility will be determined by the AWS Cloud services that a customer selects. This determines the amount of configuration work the customer must perform as part of their security responsibilities. For example, a service such as Amazon Elastic Compute Cloud (Amazon EC2) is categorized as Infrastructure as a Service (IaaS) and, as such, requires the customer to perform all of the necessary security configuration and management tasks. Customers that deploy an Amazon EC2 instance are responsible for management of the guest operating system (including updates and security patches), any application software or utilities installed by the customer on the instances, and the configuration of the AWS-provided firewall (called a security group) on each instance. For abstracted services, such as Amazon S3 and Amazon DynamoDB, AWS operates the infrastructure layer, the operating system, and platforms, and customers access the endpoints to store and retrieve data. Customers are responsible for managing their data (including encryption options), classifying their assets, and using IAM tools to apply the appropriate permissions.
+
+
+This customer/AWS shared responsibility model also extends to IT controls. Just as the responsibility to operate the IT environment is shared between AWS and its customers, so is the management, operation and verification of IT controls shared. AWS can help relieve customer burden of operating controls by managing those controls associated with the physical infrastructure deployed in the AWS environment that may previously have been managed by the customer. As every customer is deployed differently in AWS, customers can take advantage of shifting management of certain IT controls to AWS which results in a (new) distributed control environment. Customers can then use the AWS control and compliance documentation available to them to perform their control evaluation and verification procedures as required. Below are examples of controls that are managed by AWS, AWS Customers and/or both.
+
+Inherited Controls – Controls which a customer fully inherits from AWS.
+
+Physical and Environmental controls
+Shared Controls – Controls which apply to both the infrastructure layer and customer layers, but in completely separate contexts or perspectives. In a shared control, AWS provides the requirements for the infrastructure and the customer must provide their own control implementation within their use of AWS services. Examples include:
+
+Patch Management – AWS is responsible for patching and fixing flaws within the infrastructure, but customers are responsible for patching their guest OS and applications.
+Configuration Management – AWS maintains the configuration of its infrastructure devices, but a customer is responsible for configuring their own guest operating systems, databases, and applications.
+Awareness & Training - AWS trains AWS employees, but a customer must train their own employees.
+Customer Specific – Controls which are solely the responsibility of the customer based on the application they are deploying within AWS services. Examples include:
+
+Service and Communications Protection or Zone Security which may require a customer to route or zone data within specific security environments.
+Applying the AWS Shared Responsibility Model in Practice
+Once a customer understands the AWS Shared Responsibility Model and how it generally applies to operating in the cloud, they must determine how it applies to their use case. Customer responsibility varies based on many factors, including the AWS services and Regions they choose, the integration of those services into their IT environment, and the laws and regulations applicable to their organization and workload.
+
+
+# Right Sizing
+## Provisioning Instances to Match Workloads
+
+!Ref(https://d1.awsstatic.com/whitepapers/cost-optimization-right-sizing.pdf)
+
+
+# AWS Security Services
+
+As an AWS customer you inherit all the best practices of AWS policies, architecture, and operational processes.
+The AWS Cloud enables a shared responsibility model.
+
+AWS manages security OF the cloud; you are responsible for security IN the cloud.
+
+You retain control of the security you choose to implement to protect your own content, platform, applications, systems, and networks no differently than you would in an on-site data center.
+
+## Benefits of AWS Security
+- Keep Your Data Safe – the AWS infrastructure puts strong safeguards in place to help.
+- Protect your privacy – All data is stored in highly secure AWS data centers.
+- Meet Compliance Requirements – AWS manages dozens of compliance programs in its infrastructure. This means that segments of your compliance have already been completed.
+- Save Money – cut costs by using AWS data centers. Maintain the highest standard of s security without having to manage your own facility.
+- Scale Quickly – security scales with your AWS Cloud usage. No matter the size of your business, the AWS infrastructure is designed to keep your data safe.
+
+
+## Compliance
+AWS Cloud Compliance enables you to understand the robust controls in place at AWS to maintain security and data protection in the cloud.
+
+As systems are built on top of AWS Cloud infrastructure, compliance responsibilities will be shared.
+
+Compliance programs include:
+
+- Certifications / attestations.
+- Laws, regulations, and privacy.
+- Alignments / frameworks.
+
+# AWS Artifact
+AWS Artifact is your go-to, central resource for compliance-related information that matters to you.
+
+It provides on-demand access to AWS’ security and compliance reports and select online agreements.
+
+Reports available in AWS Artifact include our Service Organization Control (SOC) reports, Payment Card Industry (PCI) reports, and certifications from accreditation bodies across geographies and compliance verticals that validate the implementation and operating effectiveness of AWS security controls.
+
+Agreements available in AWS Artifact include the Business Associate Addendum (BAA) and the Nondisclosure Agreement (NDA).
+
+# Amazon GuardDuty
+
+Amazon GuardDuty offers threat detection and continuous security monitoring for malicious or unauthorized behavior to help you protect your AWS accounts and workloads.
+
+Intelligent threat detection service.
+
+Detects account compromise, instance compromise, malicious reconnaissance, and bucket compromise.
+
+Continuous monitoring for events across:
+
+- AWS CloudTrail Management Events.
+- AWS CloudTrail S3 Data Events.
+- Amazon VPC Flow Logs.
+- DNS Logs.
+
+
+# AWS WAF & AWS Shield
+## WAF:
+
+- AWS WAF is a web application firewall.
+- Protects against common exploits that could compromise application availability, compromise security, or consume excessive resources.
+- WAF lets you create rules to filter web traffic based on conditions that include IP addresses, HTTP headers and body, or custom URIs.
+- WAF makes it easy to create rules that block common web exploits like SQL injection and cross site scripting.
+- The rules are known as Web ACLs.
+
+## Shield:
+
+- AWS Shield is a managed Distributed Denial of Service (DDoS) protection service.
+- Safeguards web application running on AWS with always-on detection and automatic inline mitigations.
+- Helps to minimize application downtime and latency.
+- Two tiers – Standard and Advanced.
+
+
+
+# AWS Key Management Service (AWS KMS)
+AWS Key Management Service gives you centralized control over the encryption keys used to protect your data.
+
+You can create, import, rotate, disable, delete, define usage policies for, and audit the use of encryption keys used to encrypt your data.
+
+AWS Key Management Service is integrated with most other AWS services making it easy to encrypt the data you store in these services with encryption keys you control.
+
+AWS KMS is integrated with AWS CloudTrail which provides you the ability to audit who used which keys, on which resources, and when.
+
+AWS KMS enables developers to easily encrypt data, whether through 1-click encryption in the AWS Management Console or using the AWS SDK to easily add encryption in their application code.
+
+
+# AWS CloudHSM
+AWS CloudHSM is a cloud-based hardware security module (HSM) that enables you to easily generate and use your own encryption keys on the AWS Cloud.
+
+With CloudHSM, you can manage your own encryption keys using FIPS 140-2 Level 3 validated HSMs.
+
+CloudHSM offers you the flexibility to integrate with your applications using industry-standard APIs, such as PKCS#11, Java Cryptography Extensions (JCE), and Microsoft CryptoNG (CNG) libraries.
+
+
+# AWS Certificate Manager
+AWS Certificate Manager is a service that lets you easily provision, manage, and deploy public and private Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificates for use with AWS services and your internal connected resources.
+
+SSL/TLS certificates are used to secure network communications and establish the identity of websites over the Internet as well as resources on private networks.
+
+AWS Certificate Manager removes the time-consuming manual process of purchasing, uploading, and renewing SSL/TLS certificates.
+
+
+# AWS Inspector and AWS Trusted Advisor
+
+## AWS Inspector:
+- Inspector is an automated security assessment service that helps improve the security and compliance of applications deployed on AWS.
+- Inspector automatically assesses applications for vulnerabilities or deviations from best practices.
+- Uses an agent installed on EC2 instances.
+- Instances must be tagged.
+
+
+## AWS Trusted Advisor:
+- Trusted Advisor is an online resource that helps to reduce cost, increase performance, and improve security by optimizing your AWS environment.
+- Trusted Advisor provides real time guidance to help you provision your resources following best practices.
+- Advisor will advise you on Cost Optimization, Performance, Security, and Fault Tolerance.
+
+Trusted Advisor scans your AWS infrastructure and compares is to AWS best practices in five categories:
+- Cost Optimization.
+- Performance.
+- Security.
+- Fault Tolerance.
+- Service Limits.
+- Trusted Advisor comes in two versions.
+
+Core Checks and Recommendations (free):
+- Access to the 7 core checks to help increase security and performance.
+- Checks include S3 bucket permissions, Security Groups, IAM use, MFA on root account, EBS public snapshots, RDS public snapshots.
+
+Full Trusted Advisor Benefits (business and enterprise support plans):
+
+- Full set of checks to help optimize your entire AWS infrastructure.
+- Advises on security, performance, cost, fault tolerance and service limits.
+- Additional benefits include weekly update notifications, alerts, automated actions with CloudWatch and programmatic access using the AWS Support API.
+
+
+# Penetration Testing
+Penetration testing is the practice of testing one’s own application’s security for vulnerabilities by simulating an attack.
+
+AWS allows penetration testing. There is a limited set of resources on which penetration testing can be performed.
+
+You do not need permission to perform penetration testing against the following services:
+- Amazon EC2 instances, NAT Gateways, and Elastic Load Balancers.
+- Amazon RDS.
+- Amazon CloudFront.
+- Amazon Aurora.
+- Amazon API Gateways.
+- AWS Lambda and Lambda Edge functions.
+- Amazon LightSail resources.
+- Amazon Elastic Beanstalk environments.
+
+You can read the full vulnerability and penetration testing support policy here.
+
+In case an account is or may be compromised, AWS recommend that the following steps are taken:
+
+- Change your AWS root account password.
+- Change all IAM user’s passwords.
+- Delete or rotate all programmatic (API) access keys.
+- Delete any resources in your account that you did not create.
+- Respond to any notifications you received from AWS through the AWS Support Center and/or contact AWS Support to open a support case.
+
+
+# AWS Single Sign-On (AWS SSO)
+AWS Single Sign-On is a cloud-based single sign-on (SSO) service that makes it easy to centrally manage SSO access to all your AWS accounts and cloud applications.
+
+It helps you manage SSO access and user permissions across all your AWS accounts in AWS Organizations.
+
+AWS SSO also helps you manage access and permissions to commonly used third-party software as a service (SaaS) applications, AWS SSO-integrated applications as well as custom applications that support Security Assertion Markup Language (SAML) 2.0.
+
+AWS SSO includes a user portal where your end-users can find and access all their assigned AWS accounts, cloud applications, and custom applications in one place.
+
+
+# Amazon Cognito
+Amazon Cognito lets you add user sign-up, sign-in, and access control to your web and mobile apps quickly and easily.
+
+Amazon Cognito scales to millions of users and supports sign-in with social identity providers, such as Apple, Facebook, Google, and Amazon, and enterprise identity providers via SAML 2.0 and OpenID Connect.
+
+The two main components of AWS Cognito are user pools and identity pools:
+- User pools are user directories that provide sign-up and sign-in options for your app users.
+- Identity pools enable you to grant your users access to other AWS services.
+
+You can use identity pools and user pools separately or together.
+
+# AWS Directory Services
+AWS provides several directory types.
+
+The following three types currently feature on the exam and will be covered on this page:
+
+- Active Directory Service for Microsoft Active Directory.
+- Simple AD.
+- AD Connector.
+
+As an alternative to the AWS Directory service you can build your own Microsoft AD DCs in the AWS cloud (on EC2).
+The table below summarizes the directory services covered on this page as well as a couple of others, and provides some typical use cases:
+
+
+### AWS Directory Service for Microsoft Active Directory	
+ - AWS-managed full Microsoft AD running on Windows Server 2012 R2	
+ - Enterprises that want hosted Microsoft AD or you need LDAP for Linux apps
+
+###  AD Connector	
+ - Allows on-premises users to log into AWS services with their existing AD credentials. Also allows EC2 instances to join AD domain	
+ - Single sign-on for on-premises employees and for adding EC2 instances to the domain
+
+### Simple AD	
+- Low scale, low cost, AD implementation based on Samba	
+- Simple user directory, or you need LDAP compatibility
+
+
+# AWS Systems Manager Parameter Store
+Provides secure, hierarchical storage for configuration data management and secrets management.
+
+It is highly scalable, available, and durable.
+
+You can store data such as passwords, database strings, and license codes as parameter values.
+
+You can store values as plaintext (unencrypted data) or ciphertext (encrypted data).
+
+You can then reference values by using the unique name that you specified when you created the parameter.
+
+
+# AWS Secrets Manager
+Like Parameter Store.
+
+Allows native and automatic rotation of keys.
+
+Fine-grained permissions.
+
+Central auditing for secret rotation.
+
+# AWS Artifact
+AWS Artifact is your go-to, central resource for compliance-related information that matters to you.
+
+It provides on-demand access to AWS’ security and compliance reports and select online agreements.
+
+Reports available in AWS Artifact include our Service Organization Control (SOC) reports, Payment Card Industry (PCI) reports, and certifications from accreditation bodies across geographies and compliance verticals that validate the implementation and operating effectiveness of AWS security controls.
+
+Agreements available in AWS Artifact include the Business Associate Addendum (BAA) and the Nondisclosure Agreement (NDA).
+
+
+
+# AWS Networking Services
+
+## Amazon Virtual Private Cloud (VPC)
+A virtual private cloud (VPC) is a virtual network dedicated to your AWS account.
+
+Analogous to having your own DC inside AWS.
+
+It is logically isolated from other virtual networks in the AWS Cloud.
+
+Provides complete control over the virtual networking environment including selection of IP ranges, creation of subnets, and configuration of route tables and gateways.
+
+You can launch your AWS resources, such as Amazon EC2 instances, into your VPC.
+
+When you create a VPC, you must specify a range of IPv4 addresses for the VPC in the form of a Classless Inter-Domain Routing (CIDR) block; for example, 10.0.0.0/16.
+
+This is the primary CIDR block for your VPC.
+
+A VPC spans all the Availability Zones in the region.
+
+You have full control over who has access to the AWS resources inside your VPC.
+
+You can create your own IP address ranges, and create subnets, route tables and network gateways.
+
+When you first create your AWS account a default VPC is created for you in each AWS region.
+
+A default VPC is created in each region with a subnet in each AZ.
+
+By default you can create up to 5 VPCs per region.
+
+amazon-vpc-training
+You can define dedicated tenancy for a VPC to ensure instances are launched on dedicated hardware (overrides the configuration specified at launch).
+
+A default VPC is automatically created for each AWS account the first time Amazon EC2 resources are provisioned.
+
+The default VPC has all-public subnets.
+
+Public subnets are subnets that have:
+- “Auto-assign public IPv4 address” set to “Yes”.
+- The subnet route table has an attached Internet Gateway.
+
+Instances in the default VPC always have both a public and private IP address.
+
+AZs names are mapped to different zones for different users (i.e. the AZ “ap-southeast-2a” may map to a different physical zone for a different user).
+
+Components of a VPC:
+
+- A Virtual Private Cloud: A logically isolated virtual network in the AWS cloud. You define a VPC’s IP address space from ranges you select.
+- Subnet: A segment of a VPC’s IP address range where you can place groups of isolated resources (maps to an AZ, 1:1).
+- Internet Gateway: The Amazon VPC side of a connection to the public Internet.
+- NAT Gateway: A highly available, managed Network Address Translation (NAT) service for your resources in a private subnet to access the Internet.
+- Hardware VPN Connection: A hardware-based VPN connection between your Amazon VPC and your datacenter, home network, or co-location facility.
+- Virtual Private Gateway: The Amazon VPC side of a VPN connection.
+- Customer Gateway: Your side of a VPN connection.
+- Router: Routers interconnect subnets and direct traffic between Internet gateways, virtual private gateways, NAT gateways, and subnets.
+- Peering Connection: A peering connection enables you to route traffic via private IP addresses between two peered VPCs.
+- VPC Endpoints: Enables private connectivity to services hosted in AWS, from within your VPC without using an Internet Gateway, VPN, Network Address Translation (NAT) devices, or firewall proxies.
+- Egress-only Internet Gateway: A stateful gateway to provide egress only access for IPv6 traffic from the VPC to the Internet.
+
+Options for securely connecting to a VPC are:
+
+- AWS managed VPN – fast to setup.
+- Direct Connect – high bandwidth, low-latency but takes weeks to months to setup.
+- VPN CloudHub – used for connecting multiple sites to AWS.
+- Software VPN – use 3rd party software.
+
+An Elastic Network Interface (ENI) is a logical networking component that represents a NIC.
+
+ENIs can be attached and detached from EC2 instances, and the configuration of the ENI will be maintained.
+
+Flow Logs capture information about the IP traffic going to and from network interfaces in a VPC.
+
+Flow log data is stored using Amazon CloudWatch Logs.
+
+Flow logs can be created at the following levels:
+
+- VPC.
+- Subnet.
+- Network interface.
+
+Peering connections can be created with VPCs in different regions (available in most regions now).
+
+## Subnets
+After creating a VPC, you can add one or more subnets in each Availability Zone.
+
+When you create a subnet, you specify the CIDR block for the subnet, which is a subset of the VPC CIDR block.
+
+Each subnet must reside entirely within one Availability Zone and cannot span zones.
+
+Types of subnet:
+- If a subnet’s traffic is routed to an internet gateway, the subnet is known as a public subnet.
+- If a subnet doesn’t have a route to the internet gateway, the subnet is known as a private subnet.
+- If a subnet doesn’t have a route to the internet gateway, but has its traffic routed to a virtual private gateway for a VPN connection, the subnet is known as a VPN-only subnet.
+
+An Internet Gateway is a horizontally scaled, redundant, and highly available VPC component that allows communication between instances in your VPC and the internet.
+
+# Firewalls
+Network Access Control Lists (ACLs) provide a firewall/security layer at the subnet level.
+
+Security Groups provide a firewall/security layer at the instance level.
+
+The table below describes some differences between Security Groups and Network ACLs:
+
+### Operates at the instance (interface) level - (Security Group)	
+    - Operates at the subnet level - (Network ACL)
+### Supports allow rules only - (Security Group)	
+    - Supports allow and deny rules - (Network ACL)
+### Stateful - (Security Group)	
+    - Stateless - (Network ACL)
+### Evaluates all rules - (Security Group)	
+    - Processes rules in order - (Network ACL)
+### Applies to an instance only if associated with a group - (Security Group)	
+    - Automatically applies to all instances in the subnets its associated with - (Network ACL)
+
+
+# VPC Wizard
+The VPC Wizard can be used to create the following four configurations:
+
+VPC with a Single Public Subnet:
+
+- Your instances run in a private, isolated section of the AWS cloud with direct access to the Internet.
+- Network access control lists and security groups can be used to provide strict control over inbound and outbound network traffic to your instances.
+- Creates a /16 network with a /24 subnet. Public subnet instances use Elastic IPs or Public IPs to access the Internet.
+
+VPC with Public and Private Subnets:
+
+- In addition to containing a public subnet, this configuration adds a private subnet whose instances are not addressable from the Internet.
+- Instances in the private subnet can establish outbound connections to the Internet via the public subnet using Network Address Translation (NAT).
+- Creates a /16 network with two /24 subnets.
+- Public subnet instances use Elastic IPs to access the Internet.
+- Private subnet instances access the Internet via Network Address Translation (NAT).
+
+VPC with Public and Private Subnets and Hardware VPN Access:
+
+- This configuration adds an IPsec Virtual Private Network (VPN) connection between your Amazon VPC and your data center – effectively extending your data center to the cloud while also providing direct access to the Internet for public subnet instances in your Amazon VPC.
+- Creates a /16 network with two /24 subnets.
+- One subnet is directly connected to the Internet while the other subnet is connected to your corporate network via an IPsec VPN tunnel.
+
+VPC with a Private Subnet Only and Hardware VPN Access:
+
+- Your instances run in a private, isolated section of the AWS cloud with a private subnet whose instances are not addressable from the Internet.
+- You can connect this private subnet to your corporate data center via an IPsec Virtual Private Network (VPN) tunnel.
+- Creates a /16 network with a /24 subnet and provisions an IPsec VPN tunnel between your Amazon VPC and your corporate network.
+
+# NAT Instances
+NAT instances are managed by you.
+
+Used to enable private subnet instances to access the Internet.
+
+When creating NAT instances always disable the source/destination check on the instance.
+
+NAT instances must be in a single public subnet.
+
+NAT instances need to be assigned to security groups.
+
+NAT Gateways
+
+NAT gateways are managed for you by AWS.
+
+NAT gateways are highly available in each AZ into which they are deployed.
+
+They are preferred by enterprises.
+
+Can scale automatically up to 45Gbps.
+
+No need to patch.
+
+Not associated with any security groups.
+
+The table below describes some differences between NAT instances and NAT gateways:
+
+|NAT Instance       |	    NAT Gateway     |
+| ------------------- | ------------------- |
+|Managed by you (e.g. software updates)	| Managed by AWS|
+|Scale up (instance type) manually and use enhanced networking	| Elastic scalability up to 45 Gbps|
+|No high availability – scripted/auto-scaled HA possible using multiple NATs in multiple subnets|	Provides automatic high availability within an AZ and can be placed in multiple AZs|
+|Need to assign Security Group	|No Security Groups|
+|Can use as a bastion host	|Cannot access through SSH|
+
+
+# AWS Direct Connect (DX)
+AWS Direct Connect is a network service that provides an alternative to using the Internet to connect a customer’s on-premises sites to AWS.
+
+Data is transmitted through a private network connection between AWS and a customer’s data center or corporate network.
+
+Benefits of Direct Connect:
+- Reduce cost when using large volumes of traffic.
+- Increase reliability (predictable performance).
+- Increase bandwidth (predictable bandwidth).
+- Decrease latency.
+
+Each AWS Direct Connect connection can be configured with one or more virtual interfaces (VIFs).
+
+Public VIFs allow access to public services such as S3, EC2, and DynamoDB.
+
+Private VIFs allow access to your VPC.
+
+From Direct Connect you can connect to all AZs within the Region.
+
+You can establish IPSec connections over public VIFs to remote regions.
+
+Direct Connect is charged by port hours and data transfer.
+
+Available in 1Gbps and 10Gbps.
+
+Speeds of 50Mbps, 100Mbps, 200Mbps, 300Mbps, 400Mbps, and 500Mbps can be purchased through AWS Direct Connect Partners.
+
+Each connection consists of a single dedicated connection between ports on the customer router and an Amazon router.
+
+for HA you must have 2 DX connections – can be active/active or active/standby.
+
+Route tables need to be updated to point to a Direct Connect connection.
+
+
+
+
+# AWS Global Accelerator
+AWS Global Accelerator is a service that improves the availability and performance of applications with local or global users.
+
+It provides static IP addresses that act as a fixed entry point to application endpoints in a single or multiple AWS Regions, such as Application Load Balancers, Network Load Balancers or EC2 instances.
+
+Uses the AWS global network to optimize the path from users to applications, improving the performance of TCP and UDP traffic.
+
+AWS Global Accelerator continually monitors the health of application endpoints and will detect an unhealthy endpoint and redirect traffic to healthy endpoints in less than 1 minute.
+
+## Details and Benefits
+Uses redundant (two) static anycast IP addresses in different network zones (A and B).
+
+The redundant pair are globally advertised.
+
+Uses AWS Edge Locations – addresses are announced from multiple edge locations at the same time.
+
+Addresses are associated to regional AWS resources or endpoints.
+
+AWS Global Accelerator’s IP addresses serve as the frontend interface of applications.
+
+Intelligent traffic distribution: Routes connections to the closest point of presence for applications.
+
+Targets can be Amazon EC2 instances or Elastic Load Balancers (ALB and NLB).
+
+By using the static IP addresses, you don’t need to make any client-facing changes or update DNS records as you modify or replace endpoints.
+
+The addresses are assigned to your accelerator for as long as it exists, even if you disable the accelerator and it no longer accepts or routes traffic.
+
+# AWS Outposts
+!Ref(https://aws.amazon.com/outposts/)
+AWS Outposts is a fully managed service that offers the same AWS infrastructure, AWS services, APIs, and tools to virtually any datacenter, co-location space, or on-premises facility for a truly consistent hybrid experience.
+
+AWS Outposts is ideal for workloads that require low latency access to on-premises systems, local data processing, data residency, and migration of applications with local system interdependencies.
+
+AWS compute, storage, database, and other services run locally on Outposts, and you can access the full range of AWS services available in the Region to build, manage, and scale your on-premises applications using familiar AWS services and tools.
+
+Outposts is available as a 42U rack that can scale from 1 rack to 96 racks to create pools of compute and storage capacity.
+
+Services you can run on AWS Outposts include:
+
+- Amazon EC2.
+- Amazon EBS.
+- Amazon S3.
+- Amazon VPC.
+- Amazon ECS/EKS.
+- Amazon RDS.
+- Amazon EMR.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
