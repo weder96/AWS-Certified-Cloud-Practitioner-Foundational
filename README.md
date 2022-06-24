@@ -319,7 +319,7 @@ The AWS Well-Architected Framework helps cloud architects build the most secure,
 In this post, we provide an overview of the Well-Architected Framework’s six pillars and explore design principles and best practices. You can find more details—including definitions, FAQs, and resources—in each pillar’s whitepaper we link to below.
 
 :<br/>
-!Ref=(https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html)
+https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html
 
 
 # 1. Operational Excellence
@@ -638,7 +638,7 @@ hardware required for these application services, while you provision and use wh
 
     - <b>6. Go global in minutes </b> – Easily deploy your application in multiple regions around the world with just a few clicks. This means you can provide lower latency and a better experience for your customers at minimal cost.
 
-!Ref(https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html)
+https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html
 
 ### TRADE CAPITAL EXPENSE FOR VARIABLE EXPENSE
 Instead of having to invest heavily in data centers and servers before you know how you’re going to
@@ -1150,7 +1150,7 @@ Most commonly used for log analysis, financial analysis, or extract, translate a
 
 
 # Shared Responsibility Model
-!Ref(https://aws.amazon.com/compliance/shared-responsibility-model/)
+https://aws.amazon.com/compliance/shared-responsibility-model/
 
 Security and Compliance is a shared responsibility between AWS and the customer. 
 
@@ -1193,8 +1193,7 @@ Once a customer understands the AWS Shared Responsibility Model and how it gener
 
 # Right Sizing
 ## Provisioning Instances to Match Workloads
-
-!Ref(https://d1.awsstatic.com/whitepapers/cost-optimization-right-sizing.pdf)
+https://d1.awsstatic.com/whitepapers/cost-optimization-right-sizing.pdf
 
 
 # AWS Security Services
@@ -1678,7 +1677,7 @@ By using the static IP addresses, you don’t need to make any client-facing cha
 The addresses are assigned to your accelerator for as long as it exists, even if you disable the accelerator and it no longer accepts or routes traffic.
 
 # AWS Outposts
-!Ref(https://aws.amazon.com/outposts/)
+https://aws.amazon.com/outposts/
 AWS Outposts is a fully managed service that offers the same AWS infrastructure, AWS services, APIs, and tools to virtually any datacenter, co-location space, or on-premises facility for a truly consistent hybrid experience.
 
 AWS Outposts is ideal for workloads that require low latency access to on-premises systems, local data processing, data residency, and migration of applications with local system interdependencies.
@@ -1697,7 +1696,761 @@ Services you can run on AWS Outposts include:
 - Amazon RDS.
 - Amazon EMR.
 
+********************************************************************************************************************************************
+********************************************************************************************************************************************
 
+# AWS Cloud Management Services
+The AWS Cloud Management services can be used for account management, configuration compliance, application delivery, and systems management.
+
+## AWS Organizations
+
+https://aws.amazon.com/pt/organizations/
+
+AWS organizations allows you to consolidate multiple AWS accounts into an organization that you create and centrally manage.
+
+Available in two feature sets:
+
+- Consolidated Billing.
+- All features.
+
+Includes root accounts and organizational units.
+
+Policies are applied to root accounts or OUs.
+
+Consolidated billing includes:
+
+- Paying Account – independent and cannot access resources of other accounts.
+- Linked Accounts – all linked accounts are independent.
+
+<img src="./images/aws/Diagram_AWS-Organizations_How-It_Works_v2.png" alt="Diagram_AWS-Organizations_How-It_Works_v2" />
+
+<br /><br />
+### Benefits:
+- Quickly scale your workloads
+    
+    - AWS Organizations helps you quickly scale your environment by allowing you to programmatically create new AWS accounts. An AWS account is a container for your resources. Using multiple accounts gives you built-in security boundaries. It also empowers your teams by providing them designated accounts, and you can automatically provision resources and permissions using AWS CloudFormation StackSets.
+
+- Provide custom environments for different workloads
+    
+    - You can use Organizations to apply policies that give your teams the freedom to build with the resources they need, while staying within the safe boundaries you set. By organizing accounts into organizational units (OUs), which are groups of accounts that serve an application or service, you can apply service control policies (SCPs) to create targeted governance boundaries for your OUs.
+
+- Centrally secure and audit your environment across accounts
+    
+    - Manage auditing at scale using AWS CloudTrail to create an immutable log of all events from accounts. You can enforce and monitor backup requirements with AWS Backup, or centrally define your recommended configuration criteria across resources, AWS Regions, and accounts with AWS Config. You can also use AWS Control Tower to establish cross-account security audits, or manage and view policies applied across accounts.
+
+    - In addition, you can protect your resources by centrally managing security services, such as detecting threats with Amazon GuardDuty, or reviewing unintended access with AWS IAM Access Analyzer.
+
+- Simplify permission management and access control
+    
+    - Simplify user-based permission management for everyone in your organization with AWS Single Sign-On (SSO) and your Active Directory. You can apply least-privilege practices by creating custom permissions for job categories. You can also control access to AWS services by applying service control policies (SCPs) to users, accounts, or OUs.
+
+- Efficiently provision resources across accounts
+    
+    - You can reduce resource duplication by sharing critical resources within your organization using AWS Resource Access Manager (RAM). Organizations also helps you meet your software license agreements with AWS License Manager, and maintain a catalog of IT services and custom products with AWS Service Catalog.
+
+- Manage costs and optimize usage
+    
+    - AWS Organizations enables you to simplify costs and take advantage of quantity discounts with a single bill. In addition, you can optimize usage across your organization with services like AWS Compute Optimizer and AWS Cost Explorer. 
+
+
+********************************************************************************************************************************************
+
+## AWS Control Tower
+Simplifies the process of creating multi-account environments.
+
+Sets up governance, compliance, and security guardrails for you.
+
+Integrates with other services and features to setup the environment for you including:
+
+- AWS Organizations, SCPs, OUs, AWS Config, AWS CloudTrail, Amazon S3, Amazon SNS, AWS CloudFormation, AWS Service Catalog, AWS Single Sign-On (SSO).
+
+Examples of guardrails AWS Control Tower can configure for you include:
+
+- Disallowing public write access to Amazon Simple Storage Service (Amazon S3) buckets.
+- Disallowing access as a root user without multi-factor authentication.
+- Enabling encryption for Amazon EBS volumes attached to Amazon EC2 instances.
+
+### How it works
+
+<img src="./images/aws/product-page-diagram-ControlTower-updated..png" alt="product-page-diagram-ControlTower-updated" />
+
+<br /><br />
+
+### Benefits
+- Quickly set up and configure a new AWS environment
+    - Automate the setup of your multi-account AWS environment with just a few clicks. The setup employs blueprints that capture AWS best practices for configuring AWS security and management services to govern your environment. Blueprints are available to provide identity management, federate access to accounts, centralize logging, establish cross-account security audits, define workflows for provisioning accounts, and implement account baselines with network configurations.
+
+- Automate ongoing policy management
+    - AWS Control Tower provides mandatory and strongly recommended high-level rules, called guardrails, that help enforce your policies using service control policies (SCPs), or detect policy violations using AWS Config rules. These rules remain in effect as you create new accounts or make changes to existing accounts, and AWS Control Tower provides a summary report of how each account conforms to your enabled policies. For example, you can enable data residency guardrails so that customer data, the personal data you upload to the AWS services under your AWS account, is not stored or processed outside a specific AWS Region or Regions.
+
+- View policy-level summaries of your AWS environment
+    - AWS Control Tower provides an integrated dashboard so you can see a top-level summary of policies applied to your AWS environment. You can view details on the accounts provisioned, the guardrails enabled across your accounts, and account level status for compliance with your guardrails.
+
+********************************************************************************************************************************************
+
+## AWS Config
+https://aws.amazon.com/config/?nc1=h_ls
+
+AWS Config is a fully managed service that provides you with an AWS resource inventory, configuration history, and configuration change notifications to enable security and regulatory compliance.
+
+With AWS Config, you can discover existing and deleted AWS resources, determine your overall compliance against rules, and dive into configuration details of a resource at any point in time. AWS Config enables compliance auditing, security analysis, resource change tracking, and troubleshooting.
+
+### How it works
+
+<img src="./images/aws/product-page-diagram-Config_how-it-works.png" alt="product-page-diagram-Config_how-it-works" />
+
+<br /><br />
+
+### Benefits
+-   Continuous monitoring
+    - With AWS Config, you are able to continuously monitor and record configuration changes of your AWS resources. 
+    - Config also enables you to inventory your AWS resources, the configurations of your AWS resources, as well as software configurations within EC2 instances at any point in time. 
+    - Once change from a previous state is detected, an Amazon Simple Notification Service (SNS) notification can be delivered for you to review and take action.
+
+-  Continuous assessment
+    - AWS Config allows you to continuously audit and assess the overall compliance of your AWS resource configurations with your organization’s policies and guidelines. 
+    - AWS Config provides you with the ability to define rules for provisioning and configuring AWS resources. These rules can be provisioned independently or packaged together with compliance remediation actions inside a pack (known as a conformance pack) that can be deployed across your entire organization with a single click. 
+    - Resource configurations or configuration changes that deviate from your rules automatically trigger Amazon Simple Notification Service (SNS) notifications and Amazon CloudWatch events so that you can be alerted on a continuous basis. 
+    - You can also take advantage of the visual dashboard to check your overall compliance status and quickly spot non-compliant resources.
+
+- Change management
+    - With AWS Config, you are able to track the relationships among resources and review resource dependencies prior to making changes. 
+    - Once a change occurs, you are able to quickly review the history of the resource's configuration and determine what the resource’s configuration looked like at any point in the past. 
+    - Config provides you with information to assess how a change to a resource configuration would affect your other resources, which minimizes the impact of change-related incidents.
+
+- Operational troubleshooting
+    - With AWS Config, you can capture a comprehensive history of your AWS resource configuration changes to simplify troubleshooting of your operational issues. 
+    - Config helps you identify the root cause of operational issues through its integration with AWS CloudTrail, a service that records events related to API calls for your account. 
+    - Config leverages CloudTrail records to correlate configuration changes to particular events in your account. 
+    - You can obtain the details of the event API call that invoked the change (e.g., who made the request, at what time, and from which IP address) from the CloudTrail logs.
+
+- Enterprise-wide compliance monitoring
+    - With multi-account, multi-region data aggregation in AWS Config, you can view compliance status across your enterprise and identify non-compliant accounts. 
+    - You can dive deeper to view status for a specific region or a specific account across regions. 
+    - You can view this data from the Config console in a central account, removing the need to retrieve this information individually from each account, and each region.
+
+- Support for third-party resources
+    - AWS Config is designed to be your primary tool to perform configuration audit and compliance verification of both your AWS and third-party resources. 
+    - You can publish the configuration of third-party resources such as GitHub repositories, Microsoft Active Directory resources, or any on-premises server into AWS. 
+    - You can then view and monitor the resource inventory and configuration history using the AWS Config console and APIs, just like you do for AWS resources. - You can also create AWS Config rules or conformance packs to evaluate these third-party resources against best practices, internal policies, and regulatory policies.
+
+********************************************************************************************************************************************
+## AWS Service Catalog
+AWS Service Catalog allows organizations to create and manage catalogs of IT services that are approved for use on AWS.
+
+AWS Service Catalog allows you to centrally manage commonly deployed IT services.
+
+IT services can include virtual machine images, servers, software, and databases and multi-tier application architectures.
+
+Enables users to quickly deploy only the approved IT services they need.
+
+### Benefits
+-  Ensure compliance with corporate standards
+    - AWS Service Catalog provides a single location where organizations can centrally manage catalogs of IT services. 
+    - With AWS Service Catalog you can control which IT services and versions are available, what is configured in each of the available service, and who gets permission access by individual, group, department or cost center.
+
+
+-  Help employees quickly find and deploy approved IT services
+    - With AWS Service Catalog, you define your own catalog of AWS services and AWS Marketplace software, and make them available for your organization. 
+    - Then, end users can quickly discover and deploy IT services using a self-service portal.
+
+
+-  Centrally manage IT service lifecycle
+    - AWS Service Catalog enables you to add new versions of IT services, and end users are notified so they can keep abreast of the latest updates. 
+    - With AWS Service Catalog you can control the use of IT services by specifying constraints, such as limiting the AWS regions in which a product can be launched.
+
+
+-  Connect with ITSM/ITOM software
+    - The AWS Service Management Connector helps IT Service Management (ITSM) administrators improve governance over provisioned AWS and third-party products.
+    - ITSM tools, such as ServiceNow and Jira Service Desk, connect with the AWS Management and Governance services AWS Service Catalog, AWS Config, and AWS Systems Manager. 
+    - ITSM users to can connect to AWS Service Catalog to request, provision, and manage AWS and third-party services and resources.
+
+
+-  Manage all of your application information on AWS
+    - AWS Service Catalog AppRegistry provides a single repository for collecting and managing your application resources on AWS. 
+    - You define your application metadata, which may include information from your internal systems, other AWS services, and software vendors. 
+    - Builders can include a reference to their application within the infrastructure code, and business stakeholders have up-to-date information on application contents and metadata, such as organizational ownership, data sensitivity, and cost center.
+
+********************************************************************************************************************************************
+## AWS Systems Manager
+Manages many AWS resources including Amazon EC2, Amazon S3, Amazon RDS etc.
+
+Systems Manager Components:
+
+- Automation.
+- Run Command.
+- Inventory.
+- Patch Manager.
+- Session Manager.
+- Parameter Store.
+
+********************************************************************************************************************************************
+## AWS Personal Health Dashboard
+
+AWS Personal Health Dashboard provides alerts and remediation guidance when AWS is experiencing events that may impact you.
+
+Personal Health Dashboard gives you a personalized view into the performance and availability of the AWS services underlying your AWS resources.
+
+The dashboard displays relevant and timely information to help you manage events in progress.
+
+Also provides proactive notification to help you plan for scheduled activities.
+
+Alerts are triggered by changes in the health of AWS resources, giving you event visibility, and guidance to help quickly diagnose and resolve issues.
+
+You get a personalized view of the status of the AWS services that power your applications, enabling you to quickly see when AWS is experiencing issues that may impact you.
+
+Also provides forward looking notifications, and you can set up alerts across multiple channels, including email and mobile notifications, so you receive timely and relevant information to help plan for scheduled changes that may affect you.
+
+Alerts include remediation details and specific guidance to enable you to take immediate action to address AWS events impacting your resources.
+
+Can integrate with Amazon CloudWatch Events, enabling you to build custom rules and select targets such as AWS Lambda functions to define automated remediation actions.
+
+The AWS Health API allows you to integrate health data and notifications with your existing in-house or third-party IT Management tools.
+
+********************************************************************************************************************************************
+## Service Health Dashboard
+AWS publishes up-to-the-minute information on service availability.
+
+This information is not personalized to you (unlike Personal Health Dashboard).
+
+********************************************************************************************************************************************
+## AWS OpsWorks
+AWS OpsWorks is a configuration management service that provides managed instances of Chef and Puppet.
+
+Updates include patching, updating, backup, configuration, and compliance management.
+
+********************************************************************************************************************************************
+## AWS Trusted Advisor
+- Reduce costs, 
+- improve performance, 
+- improve security
+
+AWS Trusted Advisor is an online tool that provides you real time guidance to help you provision your resources following AWS best practices.
+
+Trusted Advisor checks help optimize your AWS infrastructure, improve security and performance, reduce your overall costs, and monitor service limits.
+
+AWS Basic Support and AWS Developer Support customers get access to 6 security checks (S3 Bucket Permissions, Security Groups – Specific Ports Unrestricted, IAM Use, MFA on Root Account, EBS Public Snapshots, RDS Public Snapshots) and 50 service limit checks.
+
+AWS Business Support and AWS Enterprise Support customers get access to all:  
+    115 Trusted Advisor checks (14 cost optimization, 17 security, 24 fault tolerance, 10 performance, and 50 service limits) and recommendations.
+
+### How it works
+
+<img src="./images/aws/AWS-trusted-advisor..png" alt="AWS-trusted-advisor" />
+
+<br /><br />
+
+### Benefits
+Checks from Trusted Advisor analyze your AWS environment and recommend actions to follow best practices.
+
+- Cost optimization
+    - Trusted Advisor can help you save cost with actionable recommendations by analyzing usage, configuration and spend. 
+    - Examples include identifying idle RDS DB instances, underutilized EBS volumes, unassociated Elastic IP addresses, and excessive timeouts in Lambda functions.
+
+-Performance
+    - Trusted Advisor can help improve the performance of your services with actionable recommendations by analyzing usage and configuration. 
+    - Examples include analyzing EBS throughput and latency, compute usage of EC2 instances, and configurations on CloudFront.
+
+-Security
+    - Trusted Advisor can help improve the security of your AWS environment by suggesting foundational security best practices curated by security experts. 
+    - Examples include identifying RDS security group access risk, exposed access keys, and unnecessary S3 bucket permissions.
+
+-Fault tolerance
+    - Trusted Advisor can help improve the reliability of your services. 
+    - Examples include examining Auto scaling EC2 groups, deleted health checks on Route 53, disabled Availability Zones, and disabled RDS backups.
+
+-Service quotas
+    - Service quotas are the maximum number of resources that you can create in an AWS account.  
+    - AWS implements quotas to provide highly available and reliable service to all customers, and protects you from unintentional spend. 
+    - Trusted Advisor will notify you once you reach more than 80% of a service quota. You can then follow recommendations to delete resources or request a quota increase.
+
+********************************************************************************************************************************************
+## AWS CloudFormation
+https://github.com/weder96/aws_certified_developer_associate
+find - AWS CloudFormation
+
+AWS CloudFormation provides a common language for you to describe and provision all the infrastructure resources in your cloud environment.
+
+CloudFormation allows you to use a simple text file to model and provision, in an automated and secure manner, all the resources needed for your applications across all regions and accounts.
+
+This file serves as the single source of truth for your cloud environment.
+
+You can use JSON or YAML to describe what AWS resources you want to create and configure.
+
+
+********************************************************************************************************************************************
+# AWS Billing and Pricing
+
+
+AWS Billing and Pricing is one of the key subjects on the AWS Certified Cloud Practitioner exam.
+
+AWS works on a pay as you go model in which you only pay for what you use, when you are using it.
+
+If you turn off resources, you don’t pay for them (you may pay for consumed storage).
+
+There are no upfront charges, and you stop paying for a service when you stop using it.
+
+Aside from EC2 reserved instances you are not locked into long term contracts and can terminate whenever you choose to.
+
+Volume discounts are available so the more you use a service the cheaper it gets (per unit used).
+
+There are no termination fees.
+
+The three fundamental drivers of cost with AWS are: compute, storage, and outbound data transfer.
+
+In most cases, there is no charge for inbound data transfer or for data transfer between other AWS services within the same region (there are some exceptions).
+
+Outbound data transfer is aggregated across services and then charged at the outbound data transfer rate.
+
+Free tier allows you to run certain resources for free.
+
+Free tier includes offers that expire after 12 months and offers that never expire.
+
+### Pricing policies include:
+- Pay as you go.
+- Pay less when you reserve.
+- Pay even less per unit when using more. 
+- Pay even less as AWS grows.
+- Custom pricing (enterprise customers only).
+
+### Free services include:
+- Amazon VPC.
+- Elastic Beanstalk (but not the resources created).
+- CloudFormation (but not the resources created).
+- Identity Access Management (IAM).
+- Auto Scaling (but not the resources created).
+- OpsWorks.
+- Consolidated Billing.
+
+### Fundamentally charges include:
+- Compute.
+- Storage.
+- Data out.
+
+
+## Amazon EC2 pricing
+### EC2 pricing is based on:
+
+- Clock hours of server uptime.
+- Instance configuration.
+- Instance type.
+- Number of instances.
+- Load balancing.
+- Detailed monitoring.
+- Auto Scaling (resources created).
+- Elastic IP addresses (charged if allocated but not used).
+- Operating systems and software packages.
+
+There are several pricing model for AWS services, these include:
+
+### On Demand:
+- Means you pay for compute or database capacity with no long-term commitments of upfront payments.
+- You pay for the computer capacity per hour or per second (Linux only, and applies to On-Demand, Reserved and Spot instances).
+- Recommended for users who prefer low cost and flexibility without upfront payment or long-term commitments.
+- Good for applications with short-term, spiky, or unpredictable workloads that cannot be interrupted.
+
+### Dedicated Hosts
+https://aws.amazon.com/ec2/dedicated-hosts/
+- A dedicated host is an EC2 servers dedicated to a single customer.
+- Runs in your VPC.
+- Good for when you want to leverage existing server-bound software licenses such as Windows Server, SQL Server, and SUSE Linux Enterprise Server.
+- Also good for meeting compliance requirements.
+
+Note that dedicated hosts can be considered “hosting model” as it determines that actual underlying infrastructure that is used for running your workload. 
+
+### Dedicated Instances:
+- Dedicated Instances are Amazon EC2 instances that run in a VPC on hardware that’s dedicated to a single customer.
+- Dedicated instances are physically isolated at the host hardware level from instances that belong to other AWS accounts.
+- Dedicated instances may share hardware with other instances from the same AWS account that are not Dedicated instances.
+
+### Spot Instances:
+- Purchase spare computing capacity with no upfront commitment at discounted hourly rates.
+- Provides up to 90% off the On-Demand price.
+- Recommended for applications that have flexible start and end times, applications that are only feasible at very low compute prices, and users with urgent computing needs for a lot of additional capacity.
+- In the old model Spot instances were terminated because of higher competing bids, in the new model this does not happen, but instances still may be terminated (with a 2-minute warning) when EC2 needs the capacity back – note: the exam may not be updated to reflect this yet.
+
+
+Savings Plans:
+Commitment to a consistent amount of usage (EC2 + Fargate + Lambda); Pay by $/hour; 1 or 3-year commitment.
+
+### Standard vs. Convertible offering classes
+
+When you purchase a Reserved Instance, you can choose between a Standard or Convertible offering class.
+https://docs.aws.amazon.com/whitepapers/latest/cost-optimization-reservation-models/standard-vs.-convertible-offering-classes.html
+
+Table 1 – Comparison of standard and Convertible Reserved Instances
+
+|Standard Reserved Instance |	Convertible Reserved Instance|
+|---------------------------|--------------------------------|
+|One-year to three-year term|	One-year to three-year term  |
+|Can be sold in the Reserved Instance Marketplace. |	Cannot be sold in the Reserved Instance Marketplace.|
+|Enables you to modify Availability Zone, scope, networking type, and instance size (within the same instance type) of your Reserved Instance. For moreinformation, see Modifying Reserved Instances.|	Enables you to exchange one or more Convertible Reserved Instances for another Convertible Reserved Instance with a different configuration, including instance family, operating system, and tenancy. There are no limits to how many times you perform an exchange, as long as the target Convertible Reserved Instance is of an equal or higher value than the Convertible Reserved Instances that you are exchanging. For more information, see Exchanging Convertible Reserved Instances.|
+
+-------------------------------------------------------------------------------------------------------------
+
+Standard Reserved Instances typically provide the highest discount levels. One-year Standard Reserved Instances provide a similar discount to three-year Convertible Reserved Instances.
+
+If you want to purchase capacity reservations, see On-Demand Capacity Reservations. 
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-capacity-reservations.html
+
+Convertible Reserved Instances are useful when:
+- Purchasing Reserved Instances in the payer account instead of a subaccount. You can more easily modify Convertible Reserved Instances to meet changing needs across your organization.
+- Workloads are likely to change. In this case, a Convertible Reserved Instance enables you to adapt as needs evolve while still obtaining discounts and capacity reservations.
+- You want to hedge against possible future price drops.
+- You can’t or don’t want to ask teams to do capacity planning or forecasting.
+- You expect compute usage to remain at the committed amount over the commitment period.
+
+
+### Reservations:
+- Reserved instances provide significant discounts, up to 75% compared to On-Demand pricing, by paying for capacity ahead of time.
+- Provide a capacity reservation when applied to a specific Availability Zone.
+- Good for applications that have predictable usage, that need reserved capacity, and for customers who can commit to a 1 or 3-year term.
+
+
+Reservations apply to various services, including:
+- Amazon EC2 Reserved Instances.
+- Amazon DynamoDB Reserved Capacity.
+- Amazon ElastiCache Reserved Nodes.
+- Amazon RDS Reserved Instances.
+- Amazon RedShift Reserved Instances.
+
+Reservation options include no upfront, partial upfront and all upfront.
+- Reservation terms are 1 or 3 years.
+
+
+## Amazon Simple Storage Service (S3) Pricing
+### Storage pricing is determined by:
+- Storage class – e.g., Standard or IA.
+- Storage quantity – data volume stored in your buckets on a per GB basis.
+- Number of requests – the number and type of requests, e.g., GET, PUT, POST, LIST, COPY.
+- Lifecycle transitions requests – moving data between storage classes.
+- Data transfer – data transferred out of an S3 region is charged.
+
+### Amazon Glacier pricing
+- Extremely low cost and you pay only for what you need with no commitments of upfront fees.
+- Charged for requests and data transferred out of Glacier.
+- “Amazon Glacier Select” pricing allows queries to run directly on data stored on Glacier without having to retrieve the archive. Priced on amount of data - - - scanned, returned, and number of requests initiated.
+
+
+## AWS Snowball Pricing
+- Pay a service fee per data transfer job and the cost of shipping the appliance.
+- Each job allows use of Snowball appliance for 10 days onsite for free.
+- Data transfer in to AWS is free and outbound is charged (per region pricing).
+
+
+## Amazon Relational Database Service (RDS) Pricing
+
+RDS pricing is determined by:
+- Clock hours of server uptime – amount of time the DB instance is running.
+- Database characteristics – e.g. database engine, size, and memory class.
+- Database purchase type – e.g. On-Demand, Reserved.
+- Number of database instances.
+- Provisioned storage – backup is included up to 100% of the size of the DB. After the DB is terminated backup storage is charged per GB per month.
+- Additional storage – the amount of storage in addition to the provisioned storage is charged per GB per month.
+- Requests – the number of input and output requests to the DB.
+- Deployment type – single AZ or multi-AZ.
+- Data transfer – inbound is free, outbound data transfer costs are tiered.
+- Reserved Instances – RDS RIs can be purchased with No Upfront, Partial Upfront, or All Upfront terms. Available for Aurora, MySQL, MariaDB, Oracle and SQL 
+Server.
+
+
+## Amazon CloudFront Pricing
+CloudFront pricing is determined by:
+- Traffic distribution – data transfer and request pricing, varies across regions, and is based on the edge location from which the content is served.
+- Requests – the number and type of requests (HTTP or HTTPS) and the geographic region in which they are made.
+- Data transfer out – quantity of data transferred out of CloudFront edge locations.
+- There are additional chargeable items such as invalidation requests, field-level encryption requests, and custom SSL certificates.
+
+
+
+## AWS Lambda Pricing
+Pay only for what you use and charged based on the number of requests for functions and the time it takes to execute the code.
+
+Price is dependent on the amount of memory allocated to the function.
+
+Amazon Elastic Block Store (EBS) Pricing
+
+Pricing is based on three factors:
+- Volumes – volume storage for all EBS volumes type is charged by the amount of GB provisioned per month.
+- Snapshots – based on the amount of space consumed by snapshots in S3. Copying snapshots is charged on the amount of data copied across regions.
+- Data transfer – inbound data transfer is free, outbound data transfer charges are tiered.
+
+
+## Amazon DynamoDB Pricing
+Charged based on:
+- Provisioned throughput (write).
+- Provisioned throughput (read).
+- Indexed data storage.
+- Data transfer – no charge for data transfer between DynamoDB and other AWS services within the same region, across regions is charged on both sides of the transfer.
+- Global tables – charged based on the resources associated with each replica of the table (replicated write capacity units, or rWCUs).
+- Reserved Capacity – option available for a one-time upfront fee and commitment to paying a minimum usage level at specific hourly rates for the duration of the term. Additional throughput is charged at standard rates.
+
+On-demand capacity mode:
+- Charged for reads and writes
+- No need to specify how much capacity is required
+- Good for unpredictable workloads
+
+Provisioned capacity mode:
+- Specify number of reads and writes per second
+- Can use Auto Scaling
+- Good for predictable workloads
+- Consistent traffic or gradual changes
+
+
+## AWS Support Plans
+There are four AWS support plans available:
+- Basic – billing and account support only (access to forums only).
+- Developer – business hours support via email.
+- Business – 24×7 email, chat, and phone support.
+- Enterprise – 24×7 email, chat, and phone support.
+
+Enterprise support comes with a Technical Account Manager (TAM).
+
+Developer allows one person to open unlimited cases.
+
+Business and Enterprise allow unlimited contacts to open unlimited cases.
+
+<img src="./images/aws/aws-support-plans-1.png" alt="aws-support-plan" />
+<br /><br />
+
+
+<img src="./images/aws/aws-support-plans-2.png" alt="aws-support-plan" />
+<br /><br />
+
+
+## Resource Groups and Tagging
+Tags are key / value pairs that can be attached to AWS resources.
+
+Tags contain metadata (data about data).
+
+Tags can sometimes be inherited – e.g. resources created by Auto Scaling, CloudFormation or Elastic Beanstalk.
+
+Resource groups make it easy to group resources using the tags that are assigned to them. You can group resources that share one or more tags.
+
+Resource groups contain general information, such as:
+- Region.
+- Name.
+- Health Checks.
+
+And specific information, such as:
+- Public & private IP addresses (for EC2).
+- Port configurations (for ELB).
+- Database engine (for RDS).
+
+
+## AWS Organizations and Consolidated Billing
+AWS organizations allows you to consolidate multiple AWS accounts into an organization that you create and centrally manage.
+
+Available in two feature sets:
+- Consolidated Billing.
+- All features.
+
+Includes root accounts and organizational units.
+
+Policies are applied to root accounts or OUs.
+
+Consolidated billing includes:
+- Paying Account – independent and cannot access resources of other accounts.
+- Linked Accounts – all linked accounts are independent.
+
+Consolidated billing has the following benefits:
+- One bill – You get one bill for multiple accounts.
+- Easy tracking – You can track the charges across multiple accounts and download the combined cost and usage data.
+- Combined usage – You can combine the usage across all accounts in the organization to share the volume pricing discounts and Reserved Instance discounts. This can result in a lower charge for your project, department, or company than with individual standalone accounts.
+- No extra fee – Consolidated billing is offered at no additional cost.
+
+Limit of 20 linked accounts (by default).
+
+One bill for multiple AWS accounts.
+
+Easy to track charges and allocate costs.
+
+Volume pricing discounts can be applied to resources.
+
+Billing alerts enabled on the Paying account include data for all Linked accounts (or can be created per Linked account).
+
+Consolidated billing allows you to get volume discounts on all your accounts.
+
+Unused reserved instances (RIs) for EC2 are applied across the group.
+
+CloudTrail is on a per account basis and per region basis but can be aggregated into a single bucket in the paying account.
+
+Best practices:
+- Always enable multi-factor authentication (MFA) on the root account.
+- Always use a strong and complex password on the root account.
+- The Paying account should be used for billing purposes only. Do not deploy resources into the Paying account.
+
+
+## AWS Quick Starts
+Quick Starts are built by AWS architects and partners to help you deploy popular solutions on AWS, based on AWS best practices for security and high availability.
+
+These reference deployments implement key technologies automatically on the AWS Cloud, often with a single click and in less than an hour.
+
+Leverages CloudFormation.
+
+AWS Cost Calculators and Tools
+- AWS Cost Explorer – enables you to visualize your usage patterns over time and to identify your underlying cost drivers.
+- AWS Pricing Calculator – create cost estimates to suit your AWS use cases.
+
+## AWS Cost Explorer
+The AWS Cost Explorer is a free tool that allows you to view charts of your costs.
+
+You can view cost data for the past 13 months and forecast how much you are likely to spend over the next three months.
+
+Cost Explorer can be used to discover patterns in how much you spend on AWS resources over time and to identify cost problem areas.
+
+Cost Explorer can help you to identify service usage statistics such as:
+- Which services you use the most.
+- View metrics for which AZ has the most traffic.
+- Which linked account is used the most.
+
+
+## AWS Pricing Calculator
+AWS Pricing Calculator is a web-based service that you can use to create cost estimates to suit your AWS use cases.
+
+AWS Pricing Calculator is useful both for people who have never used AWS and for those who want to reorganize or expand their usage.
+
+AWS Pricing Calculator allows you to explore AWS services based on your use cases and create a cost estimate.
+
+
+## AWS Cost & Usage Report
+Publish AWS billing reports to an Amazon S3 bucket.
+
+Reports break down costs by:
+- Hour, day, month, product, product resource, tags.
+- Can update the report up to three times a day.
+
+Create, retrieve, and delete your reports using the AWS CUR API Reference.
+
+
+## AWS Price List API
+Query the prices of AWS services.
+
+Price List Service API (AKA the Query API) – query with JSON.
+
+AWS Price List API (AKA the Bulk API) – query with HTML.
+
+Alerts via Amazon SNS when prices change.
+
+## AWS Budgets
+Used to track cost, usage, or coverage and utilization for your Reserved Instances and Savings Plans, across multiple dimensions, such as service, or Cost Categories.
+
+Alerting through event-driven alert notifications for when actual or forecasted cost or usage exceeds your budget limit, or when your RI and Savings Plans’ coverage or utilization drops below your threshold.
+
+Create annual, quarterly, monthly, or even daily budgets depending on your business needs.
+
+
+# AWS Monitoring and Logging Services
+
+
+This category of AWS services includes services that provide logging, monitoring, and auditing for your applications running on AWS.
+
+## Amazon CloudWatch
+Amazon CloudWatch is a monitoring service for AWS cloud resources and the applications you run on AWS.
+
+CloudWatch is for performance monitoring (CloudTrail is for auditing).
+
+Used to collect and track metrics, collect, and monitor log files, and set alarms.
+
+Automatically react to changes in your AWS resources.
+
+Monitor resources such as:
+- EC2 instances.
+- DynamoDB tables.
+- RDS DB instances.
+- Custom metrics generated by applications and services.
+- Any log files generated by your applications.
+- Gain system-wide visibility into resource utilization.
+
+CloudWatch monitoring includes application performance.
+
+Monitor operational health.
+
+CloudWatch is accessed via API, command-line interface, AWS SDKs, and the AWS Management Console.
+
+CloudWatch integrates with IAM.
+
+Amazon CloudWatch Logs lets you monitor and troubleshoot your systems and applications using your existing system, application, and custom log files.
+
+CloudWatch Logs can be used for real time application and system monitoring as well as long term log retention.
+
+CloudWatch Logs keeps logs indefinitely by default.
+
+CloudTrail logs can be sent to CloudWatch Logs for real-time monitoring.
+
+CloudWatch Logs metric filters can evaluate CloudTrail logs for specific terms, phrases, or values.
+
+CloudWatch retains metric data as follows:
+- Data points with a period of less than 60 seconds are available for 3 hours. These data points are high-resolution custom metrics.
+- Data points with a period of 60 seconds (1 minute) are available for 15 days.
+- Data points with a period of 300 seconds (5 minute) are available for 63 days.
+- Data points with a period of 3600 seconds (1 hour) are available for 455 days (15 months).
+- Dashboards allow you to create, customize, interact with, and save graphs of AWS resources and custom metrics.
+
+Alarms can be used to monitor any Amazon CloudWatch metric in your account.
+
+Events are a stream of system events describing changes in your AWS resources.
+
+Logs help you to aggregate, monitor and store logs.
+
+Basic monitoring = 5 mins (free for EC2 Instances, EBS volumes, ELBs and RDS DBs).
+
+Detailed monitoring = 1 min (chargeable).
+
+Metrics are provided automatically for several AWS products and services.
+
+There is no standard metric for memory usage on EC2 instances.
+
+A custom metric is any metric you provide to Amazon CloudWatch (e.g. time to load a web page or application performance).
+
+Options for storing logs:
+- CloudWatch Logs.
+- Centralized logging system (e.g. Splunk).
+- Custom script and store on S3.
+
+Do not store logs on non-persistent disks:
+- Best practice is to store logs in CloudWatch Logs or S3.
+
+CloudWatch Logs subscription can be used across multiple AWS accounts (using cross account access).
+
+Amazon CloudWatch uses Amazon SNS to send email.
+
+
+# AWS CloudTrail
+AWS CloudTrail is a web service that records activity made on your account and delivers log files to an Amazon S3 bucket.
+
+CloudTrail is for auditing (CloudWatch is for performance monitoring).
+
+CloudTrail is about logging and saves a history of API calls for your AWS account.
+
+Provides visibility into user activity by recording actions taken on your account.
+
+API history enables security analysis, resource change tracking, and compliance auditing.
+
+Logs API calls made via:
+- AWS Management Console.
+- AWS SDKs.
+- Command line tools.
+- Higher-level AWS services (such as CloudFormation).
+
+CloudTrail records account activity and service events from most AWS services and logs the following records:
+- The identity of the API caller.
+- The time of the API call.
+- The source IP address of the API caller.
+- The request parameters.
+- The response elements returned by the AWS service.
+CloudTrail is enabled by default.
+
+CloudTrail is per AWS account.
+
+You can consolidate logs from multiple accounts using an S3 bucket:
+1. Turn on CloudTrail in the paying account.
+2. Create a bucket policy that allows cross-account access.
+3. Turn on CloudTrail in the other accounts and use the bucket in the paying account.
+
+You can integrate CloudTrail with CloudWatch Logs to deliver data events captured by CloudTrail to a CloudWatch Logs log stream.
+
+CloudTrail log file integrity validation feature allows you to determine whether a CloudTrail log file was unchanged, deleted, or modified since CloudTrail delivered it to the specified Amazon S3 bucket.
 
 
 
