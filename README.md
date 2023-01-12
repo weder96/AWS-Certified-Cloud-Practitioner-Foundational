@@ -1,28 +1,28 @@
-# Este espaço tem como missão usar as 7 melhores formas de aplicar a aprendizagem <i>ATIVA</i> nos estudos AWS Cloud Practitioner Certification. 
-1. Anote tudo!
-2. Grife e rabisque!
-3. Questione-se ao final de uma leitura ou aula
-4. Pesquise mais!
-5. Faça exercícios
-6. Crie mapas mentais
-7. Ensine alguém!
+ # This space's mission is to use the 7 best ways to apply <i>ACTIVE</i> learning in AWS Cloud Practitioner Certification studies.
+1. Write it all down!
+2. Griffe and doodle!
+3. Question yourself at the end of a reading or class
+4. Search more!
+5. Do exercises
+6. Create mind maps
+7. Teach someone!
 
-# Objetivo
-Alem do objetivo acima o memso tem como organizar em um so topicos varios possibilidades de estudos, para o estudo
-da AWS Cloud Practitioner Certification, focando em outros que já relatarm como chegar lá, e também ligar conteúdos que 
-foram e poderão ser de grande ajuda, para novos estudantes.
+# Goal
+In addition to the above objective, it is also possible to organize in a single topic several possibilities of studies, for the study
+AWS Cloud Practitioner Certification, focusing on others who already report how to get there, and also linking content that
+were and can be of great help to new students.
 
 # AWS Cloud Practitioner Exam Guide
 
-O exame AWS Certified Cloud Practitioner (CLF-C01) tem como objetivo para indivíduos que têm o conhecimento e as habilidades necessárias para efetivamente demonstrar uma compreensão geral da nuvem AWS, independente de funções técnicas específicas abordadas por outras certificações AWS (por exemplo,Arquiteto de soluções - Associado, Desenvolvedor - Associado ou SysOps Administrador - Associado). 
-Este exame permite que os indivíduos validem seus conhecimento da nuvem AWS com uma credencial reconhecida pelo setor.
+The AWS Certified Cloud Practitioner exam (CLF-C01) is intended for individuals who have the knowledge and skills required to effectively demonstrate a general understanding of the AWS cloud, independent of specific technical roles covered by other AWS certifications (e.g., solutions - Associate, Developer - Associate or SysOps Administrator - Associate).
+This exam allows individuals to validate their AWS cloud knowledge with an industry-recognized credential.
 
-Este guia está em construção sua função e auxiliar a todos que desejam tirar a certificação AWS Certified Cloud Practitioner, o tematica e compartilhar alguns de meus pensamentos e ideias para aqueles que planejam fazer o exame.
-A certificação do AWS Cloud Practitioner é um ótimo ponto de entrada no mundo do Amazon AWS.
+This guide is in the works to help anyone who wants to take the AWS Certified Cloud Practitioner certification, cover it up and share some of my thoughts and ideas for those planning to take the exam.
+The AWS Cloud Practitioner certification is a great entry point into the world of Amazon AWS.
 
 <img src="./images/extra/aws_certifications.png" alt="certifications" />
 
-Nosso foco e a AWS Cloud Practitioner Certification, que e a porta de entrada para as demais. 
+Our focus is AWS Cloud Practitioner Certification, which is the gateway to others.
 
 # O que é AWS Cloud Practitioner Certification?
 <details>
