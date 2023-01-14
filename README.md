@@ -347,24 +347,24 @@ AWS services are grouped according to their primary functions. While some of the
 5. <img src="./images/solid/check.png" width="20px"> [AWS CodeStar](https://github.com/weder96/aws-certification-learning/tree/main/module-26#section_03)
 
 ### Customer Engagement:
-1. <img src="./images/solid/noCheck.png" width="20px"> [Amazon Connect](https://github.com/weder96/aws-certification-learning/tree/main/module-5#section-2)
+1. <img src="./images/solid/check.png" width="20px"> [Amazon Connect](https://github.com/weder96/aws-certification-learning/tree/main/module-27#section_02)
 
 ### Management, Monitoring, and Governance:
-1. <img src="./images/solid/noCheck.png" width="20px"> [AWS Auto Scaling](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-1)
-2. <img src="./images/solid/noCheck.png" width="20px"> [AWS Budgets](https://github.com/weder96/aws-certification-learning/tree/main/module-2#section-02)
+1. <img src="./images/solid/check.png" width="20px"> [AWS Auto Scaling](https://github.com/weder96/aws-certification-learning/tree/main/module-10#section-1)
+2. <img src="./images/solid/check.png" width="20px"> [AWS Budgets](https://github.com/weder96/aws-certification-learning/tree/main/module-2#section-02)
 3. <img src="./images/solid/check.png" width="20px"> [AWS CloudFormation](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-2)
 4. <img src="./images/solid/check.png" width="20px"> [AWS CloudTrail](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-3)
 5. <img src="./images/solid/check.png" width="20px"> [Amazon CloudWatch](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-4)
 6. <img src="./images/solid/check.png" width="20px"> [AWS Config](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-7)
 7. <img src="./images/solid/check.png" width="20px"> [AWS Cost and Usage Report](https://github.com/weder96/aws-certification-learning/tree/main/module-2#section-06)
-8. <img src="./images/solid/noCheck.png" width="20px"> Amazon EventBridge (Amazon CloudWatch Events)
-9. <img src="./images/solid/noCheck.png" width="20px"> [AWS License Manager](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-9)
-10. <img src="./images/solid/check.png" width="20px"> AWS Managed Services
-11. <img src="./images/solid/noCheck.png" width="20px"> [AWS Organizations](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-13)
-12. <img src="./images/solid/noCheck.png" width="20px"> [AWS Secrets Manager](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-14)
-13. <img src="./images/solid/check.png" width="20px"> AWS Systems Manager
-14. <img src="./images/solid/noCheck.png" width="20px"> [AWS Systems Manager Parameter Store](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-13)
-15. <img src="./images/solid/noCheck.png" width="20px"> [AWS Trusted Advisor](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-18)
+8. <img src="./images/solid/check.png" width="20px"> [Amazon EventBridge (Amazon CloudWatch Events)](https://github.com/weder96/aws-certification-learning/tree/main/module-12#section-7)
+9. <img src="./images/solid/check.png" width="20px"> [AWS License Manager](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-9)
+10. <img src="./images/solid/check.png" width="20px"> [AWS Managed Services](https://github.com/weder96/aws-certification-learning/tree/main/module-17#section-5)
+11. <img src="./images/solid/check.png" width="20px"> [AWS Organizations](https://github.com/weder96/aws-certification-learning/tree/main/module-15#section-18)
+12. <img src="./images/solid/check.png" width="20px"> [AWS Secrets Manager](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-14)
+13. <img src="./images/solid/check.png" width="20px"> [AWS Systems Manager](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-17)
+14. <img src="./images/solid/check.png" width="20px"> [AWS Systems Manager Parameter Store](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-13)
+15. <img src="./images/solid/check.png" width="20px"> [AWS Trusted Advisor](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-18)
 
 ### Networking and Content Delivery:
 1. <img src="./images/solid/check.png" width="20px"> [Amazon API Gateway](https://github.com/weder96/aws-certification-learning/tree/main/module-5#section-10)
@@ -382,9 +382,9 @@ AWS services are grouped according to their primary functions. While some of the
 6. <img src="./images/solid/check.png" width="20px"> [Amazon GuardDuty](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-03)
 7. <img src="./images/solid/check.png" width="20px"> [AWS Identity and Access Management (IAM)](https://github.com/weder96/aws-certification-learning/tree/main/module-15)
 8. <img src="./images/solid/check.png" width="20px"> [Amazon Inspector](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-01)
-9. <img src="./images/solid/noCheck.png" width="20px"> [AWS License Manager](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-9)
+9. <img src="./images/solid/check.png" width="20px"> [AWS License Manager](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-9)
 10. <img src="./images/solid/check.png" width="20px"> [Amazon Macie](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-19)
-11. <img src="./images/solid/noCheck.png" width="20px"> [AWS Shield](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-23)
+11. <img src="./images/solid/check.png" width="20px"> [AWS Shield](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-23)
 12. <img src="./images/solid/check.png" width="20px"> [AWS WAF](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-04)
 
 ### Storage:
