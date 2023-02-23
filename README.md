@@ -310,16 +310,20 @@ AWS services are grouped according to their primary functions. While some of the
 
 ## AWS services and features
 
-### Analytics:
-1. <img src="./images/solid/check.png" width="20px">[Amazon Athena](https://github.com/weder96/aws-certification-learning/tree/main/module-11#section-02)
-2. <img src="./images/solid/check.png" width="20px">[Amazon Kinesis](https://github.com/weder96/aws-certification-learning/tree/main/module-11#section-05)
-3. <img src="./images/solid/check.png" width="20px">[Amazon QuickSight](https://github.com/weder96/aws-certification-learning/tree/main/module-11#section-15)
+### **Analytics:**
+1. <img src="./images/solid/check.png" width="20px" target="_blank">[Amazon Athena](https://github.com/weder96/aws-certification-learning/tree/main/module-11#section-02)
+2. <img src="./images/solid/check.png" width="20px" target="_blank">[Amazon Kinesis](https://github.com/weder96/aws-certification-learning/tree/main/module-11#section-05)
+3. <img src="./images/solid/check.png" width="20px" target="_blank">[Amazon QuickSight](https://github.com/weder96/aws-certification-learning/tree/main/module-11#section-15)
 
-### Application Integration:
-1. <img src="./images/solid/check.png" width="20px"> [Amazon Simple Notification Service (Amazon SNS)](https://github.com/weder96/aws-certification-learning/tree/main/module-12#section-1)
-2. <img src="./images/solid/check.png" width="20px">[Amazon Simple Queue Service (Amazon SQS)](https://github.com/weder96/aws-certification-learning/tree/main/module-12#section-2)
 
-### Compute and Serverless:
+----------------------------------------------------------------------------------------------------------------------------
+### **Application Integration:**
+1. <img src="./images/solid/check.png" width="20px" target="_blank"> [Amazon Simple Notification Service (Amazon SNS)](https://github.com/weder96/aws-certification-learning/tree/main/module-12#section-1)
+2. <img src="./images/solid/check.png" width="20px" target="_blank">[Amazon Simple Queue Service (Amazon SQS)](https://github.com/weder96/aws-certification-learning/tree/main/module-12#section-2)
+
+
+----------------------------------------------------------------------------------------------------------------------------
+### **Compute and Serverless:**
 1.  <img src="./images/solid/check.png" width="20px">[AWS Batch](https://github.com/weder96/aws-certification-learning/tree/main/module-6#section-9)
 2.  <img src="./images/solid/check.png" width="20px">[Amazon EC2](https://github.com/weder96/aws-certification-learning/tree/main/module-6#section-1)
 3.  <img src="./images/solid/check.png" width="20px">[AWS Elastic Beanstalk](https://github.com/weder96/aws-certification-learning/tree/main/module-6#section-8)
@@ -327,18 +331,24 @@ AWS services are grouped according to their primary functions. While some of the
 5.  <img src="./images/solid/check.png" width="20px">[Amazon Lightsail](https://github.com/weder96/aws-certification-learning/tree/main/module-6#section-6)
 6.  <img src="./images/solid/check.png" width="20px">[Amazon WorkSpaces](https://github.com/weder96/aws-certification-learning/tree/main/module-6#section-14)
 
-### Containers:
+
+----------------------------------------------------------------------------------------------------------------------------
+### **Containers:**
 1.  <img src="./images/solid/check.png" width="20px">[Amazon Elastic Container Service (Amazon ECS)](https://github.com/weder96/aws-certification-learning/tree/main/module-18#section-02)
 2.  <img src="./images/solid/check.png" width="20px">[Amazon Elastic Kubernetes Service (Amazon EKS)](https://github.com/weder96/aws-certification-learning/tree/main/module-18#section-03)
 3.  <img src="./images/solid/check.png" width="20px">[AWS Fargate](https://github.com/weder96/aws-certification-learning/tree/main/module-18#section-04)
 
-### Database:
+
+----------------------------------------------------------------------------------------------------------------------------
+### **Database:**
 1.  <img src="./images/solid/check.png" width="20px">[Amazon Aurora](https://github.com/weder96/aws-certification-learning/tree/main/module-8#section-12)
 2.  <img src="./images/solid/check.png" width="20px">[Amazon DynamoDB](https://github.com/weder96/aws-certification-learning/tree/main/module-8#section-03)
 3.  <img src="./images/solid/check.png" width="20px">[Amazon ElastiCache](https://github.com/weder96/aws-certification-learning/tree/main/module-8#section-05)
 4.  <img src="./images/solid/check.png" width="20px">[Amazon RDS](https://github.com/weder96/aws-certification-learning/tree/main/module-8#section-02)
 5.  <img src="./images/solid/check.png" width="20px">[Amazon Redshift](https://github.com/weder96/aws-certification-learning/tree/main/module-8#section-04)
 
+
+----------------------------------------------------------------------------------------------------------------------------
 ### Developer Tools:
 1. <img src="./images/solid/check.png" width="20px"> [AWS CodeBuild](https://github.com/weder96/aws-certification-learning/tree/main/module-26#section_04)
 2. <img src="./images/solid/check.png" width="20px"> [AWS CodeCommit](https://github.com/weder96/aws-certification-learning/tree/main/module-26#section_06)
@@ -346,10 +356,14 @@ AWS services are grouped according to their primary functions. While some of the
 4. <img src="./images/solid/check.png" width="20px"> [AWS CodePipeline](https://github.com/weder96/aws-certification-learning/tree/main/module-26#section_10)
 5. <img src="./images/solid/check.png" width="20px"> [AWS CodeStar](https://github.com/weder96/aws-certification-learning/tree/main/module-26#section_03)
 
-### Customer Engagement:
+
+----------------------------------------------------------------------------------------------------------------------------
+### **Customer Engagement:**
 1. <img src="./images/solid/check.png" width="20px"> [Amazon Connect](https://github.com/weder96/aws-certification-learning/tree/main/module-27#section_02)
 
-### Management, Monitoring, and Governance:
+
+----------------------------------------------------------------------------------------------------------------------------
+### **Management, Monitoring, and Governance:**
 1. <img src="./images/solid/check.png" width="20px"> [AWS Auto Scaling](https://github.com/weder96/aws-certification-learning/tree/main/module-10#section-1)
 2. <img src="./images/solid/check.png" width="20px"> [AWS Budgets](https://github.com/weder96/aws-certification-learning/tree/main/module-2#section-02)
 3. <img src="./images/solid/check.png" width="20px"> [AWS CloudFormation](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-2)
@@ -366,14 +380,18 @@ AWS services are grouped according to their primary functions. While some of the
 14. <img src="./images/solid/check.png" width="20px"> [AWS Systems Manager Parameter Store](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-13)
 15. <img src="./images/solid/check.png" width="20px"> [AWS Trusted Advisor](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-18)
 
-### Networking and Content Delivery:
+
+----------------------------------------------------------------------------------------------------------------------------
+### **Networking and Content Delivery:**
 1. <img src="./images/solid/check.png" width="20px"> [Amazon API Gateway](https://github.com/weder96/aws-certification-learning/tree/main/module-5#section-10)
 2. <img src="./images/solid/check.png" width="20px"> [Amazon CloudFront](https://github.com/weder96/aws-certification-learning/tree/main/module-5#section-1)
 3. <img src="./images/solid/check.png" width="20px"> [AWS Direct Connect](https://github.com/weder96/aws-certification-learning/tree/main/module-5#section-2)
 4. <img src="./images/solid/check.png" width="20px"> [Amazon Route 53](https://github.com/weder96/aws-certification-learning/tree/main/module-5#section-6)
 5. <img src="./images/solid/check.png" width="20px"> [Amazon VPC](https://github.com/weder96/aws-certification-learning/tree/main/module-5#section-8)
 
-### Security, Identity, and Compliance:
+
+----------------------------------------------------------------------------------------------------------------------------
+### **Security, Identity, and Compliance:**
 1. <img src="./images/solid/check.png" width="20px"> [AWS Artifact](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-02)
 2. <img src="./images/solid/check.png" width="20px"> [AWS Certificate Manager (ACM)](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-07)
 3. <img src="./images/solid/check.png" width="20px"> [AWS CloudHSM](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-06)
@@ -387,7 +405,9 @@ AWS services are grouped according to their primary functions. While some of the
 11. <img src="./images/solid/check.png" width="20px"> [AWS Shield](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-23)
 12. <img src="./images/solid/check.png" width="20px"> [AWS WAF](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-04)
 
-### Storage:
+
+----------------------------------------------------------------------------------------------------------------------------
+### **Storage:**
 1. <img src="./images/solid/check.png" width="20px"> [AWS Backup](https://github.com/weder96/aws-certification-learning/tree/main/module-7#section-7)
 2. <img src="./images/solid/check.png" width="20px"> [Amazon Elastic Block Store (Amazon EBS)](https://github.com/weder96/aws-certification-learning/tree/main/module-7#section-3)
 3. <img src="./images/solid/check.png" width="20px"> [Amazon Elastic File System (Amazon EFS)](https://github.com/weder96/aws-certification-learning/tree/main/module-7#section-5)
