@@ -261,6 +261,7 @@ Sign up for AWS Free Tier accounts to use limited free services and
 Practice labs. Also, you can study the official documentation on the website.
 
 <b>Step 5:</b> study the AWS whitepapers
+
 1. Expand your technical knowledge with white papers written by the AWS team.
 2. AWS Whitepapers (aws.amazon.com/whitepapers) Kindle, .pdf and other Materials
 3. Amazon Web Services White Paper Overview, April 2017
@@ -285,27 +286,27 @@ The following is a non-exhaustive list of the tools and technologies that could 
 
 AWS services are grouped according to their primary functions. While some of these technologies will likely be covered more than others on the exam, the order and placement of them in this list are no indication of relative weight or importance:
 
--  APIs
--  Cost Explorer
--  AWS Cost and Usage Report
--  AWS Command Line Interface (CLI)
--  Elastic Load Balancers
--  Amazon EC2 instance types (for example, Reserved, On-Demand, Spot)
--  AWS global infrastructure (for example, AWS Regions, Availability Zones)
--  Infrastructure as Code (IaC)
--  Amazon Machine Images (AMIs)
--  AWS Management Console
--  AWS Marketplace
--  AWS Professional Services
--  AWS Personal Health Dashboard
--  Security groups
--  AWS Service Catalog
--  AWS Service Health Dashboard
--  Service quotas
--  AWS software development kits (SDKs)
--  AWS Support Center
--  AWS Support tiers
--  Virtual private networks (VPNs)
+-  [APIs](https://github.com/weder96/aws-certification-learning/tree/main/module-12#section-6)
+-  [Cost Explorer](https://github.com/weder96/aws-certification-learning/tree/main/module-2#section-04)
+-  [AWS Cost and Usage Report](https://github.com/weder96/aws-certification-learning/tree/main/module-2#section-06)
+-  [AWS Command Line Interface (CLI)](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-5)
+-  [Elastic Load Balancers](https://github.com/weder96/aws-certification-learning/tree/main/module-5#section-3)
+-  [Amazon EC2 instance types (for example, Reserved, On-Demand, Spot)](https://github.com/weder96/aws-certification-learning/tree/main/module-6#section-1)
+-  [AWS global infrastructure (for example, AWS Regions, Availability Zones)](https://github.com/weder96/aws-certification-learning/tree/main/module-3)
+-  [Infrastructure as Code (IaC)](https://github.com/weder96/aws-certification-learning/tree/main/module-23#section-01)
+-  [Amazon Machine Images (AMIs)](https://github.com/weder96/aws-certification-learning/tree/main/module-6#section-15)
+-  [AWS Management Console](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-12)
+-  [AWS Marketplace](https://github.com/weder96/aws-certification-learning/tree/main/module-17#section-11)
+-  [AWS Professional Services](https://aws.amazon.com/professional-services/?nc1=h_ls)
+-  [AWS Personal Health Dashboard](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-14)
+-  [Security groups](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-28)
+-  [AWS Service Catalog](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-16)
+-  [AWS Service Health Dashboard](https://aws.amazon.com/premiumsupport/technology/aws-health-dashboard/)
+-  [Service quotas](https://docs.aws.amazon.com/servicequotas/latest/userguide/intro.html)
+-  [AWS software development kits (SDKs)](https://github.com/weder96/aws-certification-learning/tree/main/module-17#section-12)
+-  [AWS Support Center](https://github.com/weder96/aws-certification-learning/tree/main/module-1#section-06)
+-  [AWS Support tiers](https://github.com/weder96/aws-certification-learning/tree/main/module-1#section-06)
+-  [Virtual private networks (VPNs)](https://github.com/weder96/aws-certification-learning/tree/main/module-5#section-9)
 
 
 ## AWS services and features
