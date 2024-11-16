@@ -14,7 +14,7 @@ were and can be of great help to new students.
 
 # AWS Cloud Practitioner Exam Guide
 
-The AWS Certified Cloud Practitioner exam (CLF-C01) is intended for individuals who have the knowledge and skills required to effectively demonstrate a general understanding of the AWS cloud, independent of specific technical roles covered by other AWS certifications (e.g., solutions - Associate, Developer - Associate or SysOps Administrator - Associate).
+The AWS Certified Cloud Practitioner exam **(CLF-C02)** is intended for individuals who have the knowledge and skills required to effectively demonstrate a general understanding of the AWS cloud, independent of specific technical roles covered by other AWS certifications (e.g., solutions - Associate, Developer - Associate or SysOps Administrator - Associate).
 This exam allows individuals to validate their AWS cloud knowledge with an industry-recognized credential.
 
 This guide is in the works to help anyone who wants to take the AWS Certified Cloud Practitioner certification, cover it up and share some of my thoughts and ideas for those planning to take the exam.
@@ -40,173 +40,272 @@ The Certified Cloud Practitioner certification page provides links to numerous s
 
 # The content covered in the exam is as follows:
 
-Domain 1 --> Cloud Concepts --> <b>26%</b> <br/>
-Domain 2 --> Security and Compliance --> <b>25%</b> <br/>
-Domain 3 --> Technology --> <b>33%</b> <br/>
-Domain 4 --> Billing and Pricing --> <b>16%</b> <br/>
+- Domain 1: Cloud Concepts (24% of scored content)
+- Domain 2: Security and Compliance (30% of scored content)
+- Domain 3: Cloud Technology and Services (34% of scored content)
+- Domain 4: Billing, Pricing, and Support (12% of scored content)
 
 
 # Domain 1: Cloud Concepts
-### 1.1 Defines the AWS Cloud and its value proposition
-- Define the benefits of the AWS cloud including:
-    - Security
-    - Reliability
-    - High Availability
-    - Elasticity
-    - Agility
-    - Pay-as-you go pricing
-    - Scalability
-    - Global Reach
-    - Economy of scale
+## Task Statement 1.1: Define the benefits of the AWS Cloud.
+- Knowledge of:
+    - Value proposition of the AWS Cloud
+- Skills in:
+    - Understanding the economies of scale (for example, cost savings)
+    - Understanding the benefits of global infrastructure (for example, speed of deployment, global reach)
+    - Understanding the advantages of high availability, elasticity, and agility
 
-- Explain how the AWS cloud allows users to focus on business value
-    - Shifting technical resources to revenue-generating activities as opposed to managing infrastructure
+## Task Statement 1.2: Identify design principles of the AWS Cloud.
+- Knowledge of:
+  - AWS Well-Architected Framework
 
-### 1.2 Identify aspects of AWS Cloud economics
-- Define items that would be part of a Total Cost of Ownership proposal
-    - Understand the role of operational expenses (OpEx)
-    - Understand the role of capital expenses (CapEx)
-    - Understand labor costs associated with on-premises operations
-    - Understand the impact of software licensing costs when moving to the cloud
-- Identify which operations will reduce costs by moving to the cloud
-    - Right-sized infrastructure
-    - Benefits of automation
-    - Reduce compliance scope (for example, reporting)
-    - Managed services (for example, RDS, ECS, EKS, DynamoDB)
+- Skills in:
+    - Understanding the pillars of the Well-Architected Framework (for example, operational excellence, security, reliability, performance efficiency, cost optimization, sustainability)
+    - Identifying differences between the pillars of the Well-Architected Framework
 
-### 1.3 Explain the different cloud architecture design principles
-- Explain the design principles
-    - Design for failure
-    - Decouple components versus monolithic architecture
-    - Implement elasticity in the cloud versus on-premises
-    - Think parallel
+## Task Statement 1.3: Understand the benefits of and strategies for migration to the AWS Cloud.
+- Knowledge of:
+    - Cloud adoption strategies
+    - Resources to support the cloud migration journey
+
+- Skills in:
+    - Understanding the benefits of the AWS Cloud Adoption Framework (AWS CAF) (for example, reduced business risk; improved environmental, social, and governance (ESG) performance; increased revenue; increased operational efficiency)
+    - Identifying appropriate migration strategies (for example, database replication, use of AWS Snowball)
+
+## Task Statement 1.4: Understand concepts of cloud economics.
+- Knowledge of:
+    - Aspects of cloud economics
+    - Cost savings of moving to the cloud
+
+- Skills in:
+    - Understanding the role of fixed costs compared with variable costs
+    - Understanding costs that are associated with on-premises environments
+    - Understanding the differences between licensing strategies (for example, Bring Your Own License [BYOL] model compared with included licenses)
+    - Understanding the concept of rightsizing
+    - Identifying benefits of automation (for example, provisioning and configuration management with AWS CloudFormation)
+    - Identifying managed AWS services (for example, Amazon RDS, Amazon Elastic Container Service [Amazon ECS], Amazon Elastic Kubernetes Service [Amazon EKS], Amazon DynamoDB)
+
 
 # Domain 2: Security and Compliance
-### 2.1 Define the AWS shared responsibility model
-- Recognize the elements of the Shared Responsibility Model
-- Describe the customer’s responsibly on AWS
-    - Describe how the customer’s responsibilities may shift depending on the service used (for example with RDS, Lambda, or EC2)
-- Describe AWS responsibilities
 
-### 2.2 Define AWS Cloud security and compliance concepts
-- Identify where to find AWS compliance information
-    - Locations of lists of recognized available compliance controls (for example, HIPPA, SOCs)
-    - Recognize that compliance requirements vary among AWS services
-- At a high level, describe how customers achieve compliance on AWS
-    - Identify different encryption options on AWS (for example, In transit, At rest)
-- Describe who enables encryption on AWS for a given service
-- Recognize there are services that will aid in auditing and reporting
-    - Recognize that logs exist for auditing and monitoring (do not have to understand the logs)
-    - Define Amazon CloudWatch, AWS Config, and AWS CloudTrail
-- Explain the concept of least privileged access
+## Task Statement 2.1: Understand the AWS shared responsibility model.
 
-### 2.3 Identify AWS access management capabilities
-- Understand the purpose of User and Identity Management
-    - Access keys and password policies (rotation, complexity)
-    - Multi-Factor Authentication (MFA)
-    - AWS Identity and Access Management (IAM)
-        - Groups/users
-        - Roles
-        - Policies, managed policies compared to custom policies
-    - Tasks that require use of root accounts Protection of root accounts
+- Knowledge of:
+    - AWS shared responsibility model
 
-### 2.4 Identify resources for security support
-- Recognize there are different network security capabilities
-    - Native AWS services (for example, security groups, Network ACLs, AWS WAF)
-    - 3rd party security products from the AWS Marketplace
-- Recognize there is documentation and where to find it (for example, best practices, whitepapers, official documents)
-    - AWS Knowledge Center, Security Center, security forum, and security blogs
-    - Partner Systems Integrators- Know that security checks are a component of AWS Trusted Advisor
-
-# Domain 3: Technology
-### 3.1 Define methods of deploying and operating in the AWS Cloud
-- Identify at a high level different ways of provisioning and operating in the AWS cloud
-    - Programmatic access, APIs, SDKs, AWS Management Console, CLI, Infrastructure as Code
-- Identify different types of cloud deployment models
-    -All in with cloud/cloud native
-    -Hybrid
-    -On-premises
-- Identify connectivity options
-    - VPN
-    - AWS Direct Connect
-    - Public internet
-
-### 3.2 Define the AWS global infrastructure
-- Describe the relationships among Regions, Availability Zones, and Edge Locations
-- Describe how to achieve high availability through the use of multiple Availability Zones
-    - Recall that high availability is achieved by using multiple Availability Zones
-    - Recognize that Availability Zones do not share single points of failure
-- Describe when to consider the use of multiple AWS Regions
-    - Disaster recovery/business continuity
-    - Low latency for end-users
-    - Data sovereignty
-- Describe at a high level the benefits of Edge Locations
-    - Amazon CloudFront
-    - AWS Global Accelerator
-
-### 3.3 Identify the core AWS services
-- Describe the categories of services on AWS (compute, storage, network, database)
-- Identify AWS compute services
-    - Recognize there are different compute families
-    - Recognize the different services that provide compute (for example, AWS Lambda compared to Amazon Elastic Container Service (Amazon ECS), or Amazon EC2, etc.)
-    - Recognize that elasticity is achieved through Auto Scaling
-    - Identify the purpose of load balancers
-- Identify different AWS storage services
-    - Describe Amazon S3
-    - Describe Amazon Elastic Block Store (Amazon EBS)
-    - Describe Amazon S3 Glacier
-    - Describe AWS Snowball
-    - Describe Amazon Elastic File System (Amazon EFS)
-    - Describe AWS Storage Gateway
-- Identify AWS networking services
-    - Identify VPC
-    - Identify security groups
-    - Identify the purpose of Amazon Route 53
-    - Identify VPN, AWS Direct Connect
-- Identify different AWS database services
-    - Install databases on Amazon EC2 compared to AWS managed databases
-    - Identify Amazon RDS
-    - Identify Amazon DynamoDB
-    - Identify Amazon Redshift
-### 3.4 Identify resources for technology support
-- Recognize there is documentation (best practices, whitepapers, AWS Knowledge Center, forums, blogs)
-- Identify the various levels and scope of AWS support
-    - AWS Abuse
-    - AWS support cases
-    - Premium support
-    - Technical Account Managers
-- Recognize there is a partner network (marketplace, third-party) including Independent Software Vendors and System Integrators
-- Identify sources of AWS technical assistance and knowledge including professional services, solution architects, training and certification, and the Amazon Partner Network
-- Identify the benefits of using AWS Trusted Advisor
-
-# Domain 4: Billing and Pricing
-### 4.1 Compare and contrast the various pricing models for AWS (for example, On-Demand Instances, Reserved Instances, and Spot Instance pricing)
-- Identify scenarios/best fit for On-Demand Instance pricing
-- Identify scenarios/best fit for Reserved-Instance pricing
-    - Describe Reserved-Instances flexibility
-    - Describe Reserved-Instances behavior in AWS Organizations
-- Identify scenarios/best fit for Spot Instance pricing
-
-### 4.2 Recognize the various account structures in relation to AWS billing and pricing
-- Recognize that consolidated billing is a feature of AWS Organizations
-- Identify how multiple accounts aid in allocating costs across departments
-
-### 4.3 Identify resources available for billing support
-- Identify ways to get billing support and information
-    - Cost Explorer, AWS Cost and Usage Report, Amazon QuickSight, third-party partners, and AWS Marketplace tools
-    - Open a billing support case
-    - The role of the Concierge for AWS Enterprise Support Plan customers
-- Identify where to find pricing information on AWS services
-    - AWS Simple Monthly Calculator
-    - AWS Services product pages
-    - AWS Pricing API
-- Recognize that alarms/alerts exist
-- Identify how tags are used in cost allocation
+- Skills in:
+    - Recognizing the components of the AWS shared responsibility model
+    - Describing the customer’s responsibilities on AWS
+    - Describing AWS responsibilities
+    - Describing responsibilities that the customer and AWS share
+    - Describing how AWS responsibilities and customer responsibilities can shift, depending on the service used (for example, Amazon RDS, AWS Lambda, Amazon EC2)
 
 
-## The AWS Certified Cloud Practitioner exam (CLF-C01) 
+## Task Statement 2.2: Understand AWS Cloud security, governance, and compliance concepts.
+- Knowledge of:
+    - AWS compliance and governance concepts
+    - Benefits of cloud security (for example, encryption)
+    - Where to capture and locate logs that are associated with cloud security
 
-The AWS Certified Cloud Practitioner exam (CLF-C01) is intended for individuals who have the knowledge and skills necessary to effectively
+- Skills in:
+    - Identifying where to find AWS compliance information (for example, AWS Artifact)
+    - Understanding compliance needs among geographic locations or industries (for example, AWS Compliance)
+    - Describing how customers secure resources on AWS (for example, Amazon Inspector, AWS Security Hub, Amazon GuardDuty, AWS Shield)
+    - Identifying different encryption options (for example, encryption in transit, encryption at rest)
+    - Recognizing services that aid in governance and compliance (for example, monitoring with Amazon CloudWatch; auditing with AWS CloudTrail, AWS Audit Manager, and AWS Config; reporting with access reports)
+    - Recognizing compliance requirements that vary among AWS services
+
+## Task Statement 2.3: Identify AWS access management capabilities.
+
+- Knowledge of:
+    - Identity and access management (for example, AWS Identity and Access Management [IAM])
+    - Importance of protecting the AWS root user account
+    - Principle of least privilege
+    - AWS IAM Identity Center (AWS Single Sign-On)
+
+- Skills in:
+    - Understanding access keys, password policies, and credential storage (for example, AWS Secrets Manager, AWS Systems Manager)
+    - Identifying authentication methods in AWS (for example, multi-factor authentication [MFA], IAM Identity Center, cross-account IAM roles)
+    - Defining groups, users, custom policies, and managed policies in compliance with the principle of least privilege
+    - Identifying tasks that only the account root user can perform
+    - Understanding which methods can achieve root user protection
+    - Understanding the types of identity management (for example, federated)
+
+
+## Task Statement 2.4: Identify components and resources for security.
+- Knowledge of:
+    - Security capabilities that AWS provides
+    - Security-related documentation that AWS provides
+
+- Skills in:
+    - Describing AWS security features and services (for example, security groups, network ACLs, AWS WAF)
+    - Understanding that third-party security products are available from AWS Marketplace
+    - Identifying where AWS security information is available (for example, AWS Knowledge Center, AWS Security Center, AWS Security Blog)
+    - Understanding the use of AWS services for identifying security issues (for example, AWS Trusted Advisor)
+
+
+# Domain 3: Cloud Technology and Services
+
+## Task Statement 3.1: Define methods of deploying and operating in the AWS Cloud.
+
+- Knowledge of:
+    - Different ways of provisioning and operating in the AWS Cloud
+    - Different ways to access AWS services
+    - Types of cloud deployment models
+    - Connectivity options
+
+- Skills in:
+    - Deciding between options such as programmatic access (for example, APIs, SDKs, CLI), the AWS Management Console, and infrastructure as code (IaC)
+    - Evaluating requirements to determine whether to use one-time operations or repeatable processes
+    - Identifying different deployment models (for example, cloud, hybrid, onpremises)
+    - Identifying connectivity options (for example, AWS VPN, AWS Direct Connect, public internet)
+
+## Task Statement 3.2: Define the AWS global infrastructure.
+- Knowledge of:
+    - AWS Regions, Availability Zones, and edge locations
+    - High availability
+    - Use of multiple Regions
+    - Benefits of edge locations
+    - AWS Wavelength Zones and AWS Local Zones
+
+- Skills in:
+    - Describing relationships among Regions, Availability Zones, and edge locations
+    - Describing how to achieve high availability by using multiple Availability Zones
+    - Recognizing that Availability Zones do not share single points of failure
+    - Describing when to use multiple Regions (for example, disaster recovery, business continuity, low latency for end users, data sovereignty)
+    - Describing at a high level the benefits of edge locations (for example, Amazon CloudFront, AWS Global Accelerator)
+
+## Task Statement 3.3: Identify AWS compute services.
+- Knowledge of:
+    - AWS compute services
+
+- Skills in:
+    - Recognizing the appropriate use of different EC2 instance types (for example, compute optimized, storage optimized)
+    - Recognizing the appropriate use of different container options (for example, Amazon ECS, Amazon EKS)
+    - Recognizing the appropriate use of different serverless compute options (for example, AWS Fargate, Lambda)
+    - Recognizing that auto scaling provides elasticity
+    - Identifying the purposes of load balancers
+
+
+## Task Statement 3.4: Identify AWS database services.
+- Knowledge of:
+    - AWS database services
+    - Database migration
+
+- Skills in:
+    - Deciding when to use EC2 hosted databases or AWS managed databases
+    - Identifying relational databases (for example, Amazon RDS, Amazon Aurora)
+    - Identifying NoSQL databases (for example, DynamoDB)
+    - Identifying memory-based databases
+    - Identifying database migration tools (for example AWS Database Migration Service [AWS DMS], AWS Schema Conversion Tool [AWS SCT])
+
+## Task Statement 3.5: Identify AWS network services.
+- Knowledge of:
+    - AWS network services
+
+- Skills in:
+    - Identifying the components of a VPC (for example, subnets, gateways)
+    - Understanding security in a VPC (for example, network ACLs, security groups)
+    - Understanding the purpose of Amazon Route 53
+    - Identifying edge services (for example, CloudFront, Global Accelerator)
+    - Identifying network connectivity options to AWS (for example AWS VPN, Direct Connect)
+
+
+## Task Statement 3.6: Identify AWS storage services.
+- Knowledge of:
+    - AWS storage services
+
+- Skills in:
+    - Identifying the uses for object storage
+    - Recognizing the differences in Amazon S3 storage classes
+    - Identifying block storage solutions (for example, Amazon Elastic Block Store [Amazon EBS], instance store)
+    - Identifying file services (for example, Amazon Elastic File System [Amazon EFS], Amazon FSx)
+    - Identifying cached file systems (for example, AWS Storage Gateway)
+    - Understanding use cases for lifecycle policies
+    - Understanding use cases for AWS Backup
+
+## Task Statement 3.7: Identify AWS artificial intelligence and machine learning (AI/ML) services and analytics services.
+- Knowledge of:
+    - AWS AI/ML services
+    - AWS analytics services
+
+- Skills in:
+    - Understanding the different AI/ML services and the tasks that they accomplish (for example, Amazon SageMaker, Amazon Lex, Amazon Kendra)
+    - Identifying the services for data analytics (for example, Amazon Athena, Amazon Kinesis, AWS Glue, Amazon QuickSight)
+
+# Task Statement 3.8: Identify services from other in-scope AWS service categories.
+- Knowledge of:
+    - Application integration services of Amazon EventBridge, Amazon Simple Notification Service (Amazon SNS), and Amazon Simple Queue Service (Amazon SQS)
+    - Business application services of Amazon Connect and Amazon Simple Email Service (Amazon SES)
+    - Customer engagement services of AWS Activate for Startups, AWS IQ, AWS Managed Services (AMS), and AWS Support
+    - Developer tool services and capabilities of AWS AppConfig, AWS Cloud9, AWS CloudShell, AWS CodeArtifact, AWS CodeBuild, AWS CodeCommit, AWS CodeDeploy, AWS CodePipeline, AWS CodeStar, and AWS X-Ray
+    - End-user computing services of Amazon AppStream 2.0, Amazon WorkSpaces, and Amazon WorkSpaces Web
+    - Frontend web and mobile services of AWS Amplify and AWS AppSync
+    - IoT services of AWS IoT Core and AWS IoT Greengrass
+
+- Skills in:
+    - Choosing the appropriate service to deliver messages and to send alerts and notifications
+    - Choosing the appropriate service to meet business application needs
+    - Choosing the appropriate service for AWS customer support
+    - Choosing the appropriate option for business support assistance
+    - Identifying the tools to develop, deploy, and troubleshoot applications
+    - Identifying the services that can present the output of virtual machines (VMs) on end-user machines
+    - Identifying the services that can create and deploy frontend and mobile services
+    - Identifying the services that manage IoT devices
+
+# Domain 4: Billing, Pricing, and Support
+
+## Task Statement 4.1: Compare AWS pricing models.
+- Knowledge of:
+    - Compute purchasing options (for example, On-Demand Instances, Reserved Instances, Spot Instances, Savings Plans, Dedicated Hosts, Dedicated Instances, Capacity Reservations)
+    - Data transfer charges
+    - Storage options and tiers
+
+- Skills in:
+    - Identifying and comparing when to use various compute purchasing options
+    - Describing Reserved Instance flexibility
+    - Describing Reserved Instance behavior in AWS Organizations
+    - Understanding incoming data transfer costs and outgoing data transfer costs (for example, from one Region to another Region, within the same Region)
+    - Understanding different pricing options for various storage options and tiers
+
+## Task Statement 4.2: Understand resources for billing, budget, and cost management.
+- Knowledge of:
+    - Billing support and information
+    - Pricing information for AWS services
+    - AWS Organizations
+    - AWS cost allocation tags
+
+- Skills in:
+    - Understanding the appropriate uses and capabilities of AWS Budgets, AWS Cost Explorer, and AWS Billing Conductor
+    - Understanding the appropriate uses and capabilities of AWS Pricing Calculator
+    - Understanding AWS Organizations consolidated billing and allocation of costs
+    - Understanding various types of cost allocation tags and their relation to billing reports (for example, AWS Cost and Usage Report)
+
+## Task Statement 4.3: Identify AWS technical resources and AWS Support options.
+- Knowledge of:
+    - Resources and documentation available on official AWS websites
+    - AWS Support plans
+    - Role of the AWS Partner Network, including independent software vendors and system integrators
+    - AWS Support Center
+
+- Skills in:
+    - Locating AWS whitepapers, blogs, and documentation on official AWS websites
+    - Identifying and locating AWS technical resources (for example AWS Prescriptive Guidance, AWS Knowledge Center, AWS re:Post)
+    - Identifying AWS Support options for AWS customers (for example, customer service and communities, AWS Developer Support, AWS Business Support, AWS Enterprise On-Ramp Support, AWS Enterprise Support)
+    - Identifying the role of Trusted Advisor, AWS Health Dashboard, and the AWS Health API to help manage and monitor environments for cost optimization
+    - Identifying the role of the AWS Trust and Safety team to report abuse of AWS resources
+    - Understanding the role of AWS Partners (for example AWS Marketplace, independent software vendors, system integrators)
+    - Identifying the benefits of being an AWS Partner (for example, partner training and certification, partner events, partner volume discounts)
+    - Identifying the key services that AWS Marketplace offers (for example, cost management, governance and entitlement)
+    - Identifying technical assistance options available at AWS (for example, AWS Professional Services, AWS Solutions Architects)
+
+
+
+----------------------------------------------------------------------------------------------------------------------
+
+## The AWS Certified Cloud Practitioner exam (CLF-C02) 
+
+The AWS Certified Cloud Practitioner exam (CLF-C02) is intended for individuals who have the knowledge and skills necessary to effectively
 demonstrate a general understanding of the AWS cloud, independent of specific technical roles covered by other AWS certifications (eg, Solutions Architect - Associate, Developer - Associate, or SysOps Administrator - Associate).
 This exam allows individuals to validate their AWS cloud knowledge with an industry-recognized credential.
 
@@ -226,7 +325,7 @@ will be plausible and are designed to be attractive to candidates who don't know
 Unanswered questions are scored as incorrect. There is no penalty for guessing.
 
 Exam results:
-The AWS Certified Cloud Practitioner exam (CLF-C01) is a pass or fail exam. The exam is scored against a minimum standard
+The AWS Certified Cloud Practitioner exam (CLF-C02) is a pass or fail exam. The exam is scored against a minimum standard
 established by AWS professionals who are guided by certification industry best practices and guidelines.
 Exam results are reported as a scaled score from 100 to 1000, with a minimum passing score of 700.
 The score shows how well you performed on the exam as a whole and whether or not you passed.
@@ -286,137 +385,242 @@ The following is a non-exhaustive list of the tools and technologies that could 
 
 AWS services are grouped according to their primary functions. While some of these technologies will likely be covered more than others on the exam, the order and placement of them in this list are no indication of relative weight or importance:
 
--  [APIs](https://github.com/weder96/aws-certification-learning/tree/main/module-12#section-6)
--  [Cost Explorer](https://github.com/weder96/aws-certification-learning/tree/main/module-2#section-04)
--  [AWS Cost and Usage Report](https://github.com/weder96/aws-certification-learning/tree/main/module-2#section-06)
--  [AWS Command Line Interface (CLI)](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-5)
--  [Elastic Load Balancers](https://github.com/weder96/aws-certification-learning/tree/main/module-5#section-3)
--  [Amazon EC2 instance types (for example, Reserved, On-Demand, Spot)](https://github.com/weder96/aws-certification-learning/tree/main/module-6#section-1)
--  [AWS global infrastructure (for example, AWS Regions, Availability Zones)](https://github.com/weder96/aws-certification-learning/tree/main/module-3)
--  [Infrastructure as Code (IaC)](https://github.com/weder96/aws-certification-learning/tree/main/module-23#section-01)
--  [Amazon Machine Images (AMIs)](https://github.com/weder96/aws-certification-learning/tree/main/module-6#section-15)
--  [AWS Management Console](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-12)
--  [AWS Marketplace](https://github.com/weder96/aws-certification-learning/tree/main/module-17#section-11)
--  [AWS Professional Services](https://aws.amazon.com/professional-services/?nc1=h_ls)
--  [AWS Personal Health Dashboard](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-14)
--  [Security groups](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-28)
--  [AWS Service Catalog](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-16)
--  [AWS Service Health Dashboard](https://aws.amazon.com/premiumsupport/technology/aws-health-dashboard/)
--  [Service quotas](https://docs.aws.amazon.com/servicequotas/latest/userguide/intro.html)
--  [AWS software development kits (SDKs)](https://github.com/weder96/aws-certification-learning/tree/main/module-17#section-12)
--  [AWS Support Center](https://github.com/weder96/aws-certification-learning/tree/main/module-1#section-06)
--  [AWS Support tiers](https://github.com/weder96/aws-certification-learning/tree/main/module-1#section-06)
--  [Virtual private networks (VPNs)](https://github.com/weder96/aws-certification-learning/tree/main/module-5#section-9)
+- [APIs](https://github.com/weder96/aws-certification-learning/tree/main/module-12#section-6)
+- Benefits of migrating to the AWS Cloud
+- AWS Cloud Adoption Framework (AWS CAF)
+- AWS Compliance
+- Compute
+- Cost management
+- Databases
+- Amazon EC2 instance types (for example, Reserved, On-Demand, Spot)
+- AWS global infrastructure (for example, AWS Regions, Availability Zones)
+- Infrastructure as code (IaC)
+- AWS Knowledge Center
+- Machine learning
+- Management and governance
+- Migration and data transfer
+- Network services
+- AWS Partner Network
+- AWS Prescriptive Guidance
+- AWS Pricing Calculator
+- AWS Professional Services
+- AWS re:Post
+- AWS SDKs
+- Security
+- AWS Security Blog
+- AWS Security Center
+- AWS shared responsibility model
+- AWS Solutions Architects
+- Storage
 
 
 ## AWS services and features
 
 ### **Analytics:**
-1. <img src="./images/solid/check.png" width="20px" target="_blank">[Amazon Athena](https://github.com/weder96/aws-certification-learning/tree/main/module-11#section-02)
-2. <img src="./images/solid/check.png" width="20px" target="_blank">[Amazon Kinesis](https://github.com/weder96/aws-certification-learning/tree/main/module-11#section-05)
-3. <img src="./images/solid/check.png" width="20px" target="_blank">[Amazon QuickSight](https://github.com/weder96/aws-certification-learning/tree/main/module-11#section-15)
+- <img src="./images/solid/check.png" width="20px" target="_blank">[Amazon Athena](https://github.com/weder96/aws-certification-learning/tree/main/module-11#section-02)
+- <img src="./images/solid/check.png" width="20px" target="_blank">[AWS Data Exchange](https://github.com/weder96/aws-certification-learning/tree/main/module-11#section-11)
+- <img src="./images/solid/check.png" width="20px" target="_blank">[Amazon EMR](https://github.com/weder96/aws-certification-learning/tree/main/module-11#section-01)
+- <img src="./images/solid/check.png" width="20px" target="_blank">[AWS Glue](https://github.com/weder96/aws-certification-learning/tree/main/module-11#section-03)
+- <img src="./images/solid/check.png" width="20px" target="_blank">[Amazon Kinesis](https://github.com/weder96/aws-certification-learning/tree/main/module-11#section-05)
+- <img src="./images/solid/check.png" width="20px" target="_blank">[Amazon Managed Streaming for Apache Kafka (Amazon MSK)](https://github.com/weder96/aws-certification-learning/tree/main/module-11#section-17)
+- <img src="./images/solid/check.png" width="20px" target="_blank">[Amazon OpenSearch Service](https://github.com/weder96/aws-certification-learning/tree/main/module-11#section-10)
+- <img src="./images/solid/check.png" width="20px" target="_blank">[Amazon QuickSight](https://github.com/weder96/aws-certification-learning/tree/main/module-11#section-15)
+- <img src="./images/solid/check.png" width="20px" target="_blank">[Amazon Redshift](https://github.com/weder96/aws-certification-learning/tree/main/module-11#section-16)
 
 
 ----------------------------------------------------------------------------------------------------------------------------
 ### **Application Integration:**
-1. <img src="./images/solid/check.png" width="20px" target="_blank"> [Amazon Simple Notification Service (Amazon SNS)](https://github.com/weder96/aws-certification-learning/tree/main/module-12#section-1)
-2. <img src="./images/solid/check.png" width="20px" target="_blank">[Amazon Simple Queue Service (Amazon SQS)](https://github.com/weder96/aws-certification-learning/tree/main/module-12#section-2)
+- <img src="./images/solid/check.png" width="20px" target="_blank"> [Amazon EventBridge](https://github.com/weder96/aws-certification-learning/tree/main/module-12#section-7)
+- <img src="./images/solid/check.png" width="20px" target="_blank"> [Amazon Simple Notification Service (Amazon SNS)](https://github.com/weder96/aws-certification-learning/tree/main/module-12#section-1)
+- <img src="./images/solid/check.png" width="20px" target="_blank">[Amazon Simple Queue Service (Amazon SQS)](https://github.com/weder96/aws-certification-learning/tree/main/module-12#section-2)
+- <img src="./images/solid/check.png" width="20px" target="_blank"> [AWS Step Functions](https://github.com/weder96/aws-certification-learning/tree/main/module-12#section-8)
+
+----------------------------------------------------------------------------------------------------------------------------
+
+### **Business Applications:**
+
+- <img src="./images/solid/check.png" width="20px"> [Amazon Connect](https://github.com/weder96/aws-certification-learning/tree/main/module-27#section_02)
+- <img src="./images/solid/check.png" width="20px"> [Amazon Simple Email Service (Amazon SES)](https://aws.amazon.com/ses/?nc1=h_ls)
+
+----------------------------------------------------------------------------------------------------------------------------
+
+### **Cloud Financial Management:**
+- AWS Billing Conductor
+- AWS Budgets
+- AWS Cost and Usage Report
+- AWS Cost Explorer
+- AWS Marketplace
 
 
 ----------------------------------------------------------------------------------------------------------------------------
 ### **Compute and Serverless:**
-1.  <img src="./images/solid/check.png" width="20px">[AWS Batch](https://github.com/weder96/aws-certification-learning/tree/main/module-6#section-9)
-2.  <img src="./images/solid/check.png" width="20px">[Amazon EC2](https://github.com/weder96/aws-certification-learning/tree/main/module-6#section-1)
-3.  <img src="./images/solid/check.png" width="20px">[AWS Elastic Beanstalk](https://github.com/weder96/aws-certification-learning/tree/main/module-6#section-8)
-4.  <img src="./images/solid/check.png" width="20px">[AWS Lambda](https://github.com/weder96/aws-certification-learning/tree/main/module-14#section-1)
-5.  <img src="./images/solid/check.png" width="20px">[Amazon Lightsail](https://github.com/weder96/aws-certification-learning/tree/main/module-6#section-6)
-6.  <img src="./images/solid/check.png" width="20px">[Amazon WorkSpaces](https://github.com/weder96/aws-certification-learning/tree/main/module-6#section-14)
+-  <img src="./images/solid/check.png" width="20px">[AWS Batch](https://github.com/weder96/aws-certification-learning/tree/main/module-6#section-9)
+-  <img src="./images/solid/check.png" width="20px">[Amazon EC2](https://github.com/weder96/aws-certification-learning/tree/main/module-6#section-1)
+-  <img src="./images/solid/check.png" width="20px">[AWS Elastic Beanstalk](https://github.com/weder96/aws-certification-learning/tree/main/module-6#section-8)
+-  <img src="./images/solid/check.png" width="20px">[Amazon Lightsail](https://github.com/weder96/aws-certification-learning/tree/main/module-6#section-6)
+- AWS Local Zones
+- AWS Outposts
+- AWS Wavelength
+
+
+-  <img src="./images/solid/check.png" width="20px">[Amazon WorkSpaces](https://github.com/weder96/aws-certification-learning/tree/main/module-6#section-14)
 
 
 ----------------------------------------------------------------------------------------------------------------------------
 ### **Containers:**
-1.  <img src="./images/solid/check.png" width="20px">[Amazon Elastic Container Service (Amazon ECS)](https://github.com/weder96/aws-certification-learning/tree/main/module-18#section-02)
-2.  <img src="./images/solid/check.png" width="20px">[Amazon Elastic Kubernetes Service (Amazon EKS)](https://github.com/weder96/aws-certification-learning/tree/main/module-18#section-03)
-3.  <img src="./images/solid/check.png" width="20px">[AWS Fargate](https://github.com/weder96/aws-certification-learning/tree/main/module-18#section-04)
+-  <img src="./images/solid/check.png" width="20px">[Amazon Elastic Container Registry (Amazon ECR)](https://github.com/weder96/aws-certification-learning/tree/main/module-18#section-01)
+-  <img src="./images/solid/check.png" width="20px">[Amazon Elastic Container Service (Amazon ECS)](https://github.com/weder96/aws-certification-learning/tree/main/module-18#section-02)
+-  <img src="./images/solid/check.png" width="20px">[Amazon Elastic Kubernetes Service (Amazon EKS)](https://github.com/weder96/aws-certification-learning/tree/main/module-18#section-03)
 
-
-----------------------------------------------------------------------------------------------------------------------------
-### **Database:**
-1.  <img src="./images/solid/check.png" width="20px">[Amazon Aurora](https://github.com/weder96/aws-certification-learning/tree/main/module-8#section-12)
-2.  <img src="./images/solid/check.png" width="20px">[Amazon DynamoDB](https://github.com/weder96/aws-certification-learning/tree/main/module-8#section-03)
-3.  <img src="./images/solid/check.png" width="20px">[Amazon ElastiCache](https://github.com/weder96/aws-certification-learning/tree/main/module-8#section-05)
-4.  <img src="./images/solid/check.png" width="20px">[Amazon RDS](https://github.com/weder96/aws-certification-learning/tree/main/module-8#section-02)
-5.  <img src="./images/solid/check.png" width="20px">[Amazon Redshift](https://github.com/weder96/aws-certification-learning/tree/main/module-8#section-04)
-
-
-----------------------------------------------------------------------------------------------------------------------------
-### Developer Tools:
-1. <img src="./images/solid/check.png" width="20px"> [AWS CodeBuild](https://github.com/weder96/aws-certification-learning/tree/main/module-26#section_04)
-2. <img src="./images/solid/check.png" width="20px"> [AWS CodeCommit](https://github.com/weder96/aws-certification-learning/tree/main/module-26#section_06)
-3. <img src="./images/solid/check.png" width="20px"> [AWS CodeDeploy](https://github.com/weder96/aws-certification-learning/tree/main/module-26#section_07)
-4. <img src="./images/solid/check.png" width="20px"> [AWS CodePipeline](https://github.com/weder96/aws-certification-learning/tree/main/module-26#section_10)
-5. <img src="./images/solid/check.png" width="20px"> [AWS CodeStar](https://github.com/weder96/aws-certification-learning/tree/main/module-26#section_03)
 
 
 ----------------------------------------------------------------------------------------------------------------------------
 ### **Customer Engagement:**
-1. <img src="./images/solid/check.png" width="20px"> [Amazon Connect](https://github.com/weder96/aws-certification-learning/tree/main/module-27#section_02)
+- AWS Activate for Startups
+- AWS IQ
+- AWS Managed Services (AMS)
+- AWS Support
+
+----------------------------------------------------------------------------------------------------------------------------
+### **Database:**
+-  <img src="./images/solid/check.png" width="20px">[Amazon Aurora](https://github.com/weder96/aws-certification-learning/tree/main/module-8#section-12)
+-  <img src="./images/solid/check.png" width="20px">[Amazon DynamoDB](https://github.com/weder96/aws-certification-learning/tree/main/module-8#section-03)
+-  <img src="./images/solid/check.png" width="20px">[Amazon MemoryDB for Redis](https://aws.amazon.com/memorydb/?nc1=h_ls)
+-  <img src="./images/solid/check.png" width="20px">[Amazon Neptune](https://github.com/weder96/aws-certification-learning/tree/main/module-8#section-11)
+-  <img src="./images/solid/check.png" width="20px">[Amazon RDS](https://github.com/weder96/aws-certification-learning/tree/main/module-8#section-02)
+
 
 
 ----------------------------------------------------------------------------------------------------------------------------
-### **Management, Monitoring, and Governance:**
-1. <img src="./images/solid/check.png" width="20px"> [AWS Auto Scaling](https://github.com/weder96/aws-certification-learning/tree/main/module-10#section-1)
-2. <img src="./images/solid/check.png" width="20px"> [AWS Budgets](https://github.com/weder96/aws-certification-learning/tree/main/module-2#section-02)
-3. <img src="./images/solid/check.png" width="20px"> [AWS CloudFormation](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-2)
-4. <img src="./images/solid/check.png" width="20px"> [AWS CloudTrail](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-3)
-5. <img src="./images/solid/check.png" width="20px"> [Amazon CloudWatch](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-4)
-6. <img src="./images/solid/check.png" width="20px"> [AWS Config](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-7)
-7. <img src="./images/solid/check.png" width="20px"> [AWS Cost and Usage Report](https://github.com/weder96/aws-certification-learning/tree/main/module-2#section-06)
-8. <img src="./images/solid/check.png" width="20px"> [Amazon EventBridge (Amazon CloudWatch Events)](https://github.com/weder96/aws-certification-learning/tree/main/module-12#section-7)
-9. <img src="./images/solid/check.png" width="20px"> [AWS License Manager](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-9)
-10. <img src="./images/solid/check.png" width="20px"> [AWS Managed Services](https://github.com/weder96/aws-certification-learning/tree/main/module-17#section-5)
-11. <img src="./images/solid/check.png" width="20px"> [AWS Organizations](https://github.com/weder96/aws-certification-learning/tree/main/module-15#section-18)
-12. <img src="./images/solid/check.png" width="20px"> [AWS Secrets Manager](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-14)
-13. <img src="./images/solid/check.png" width="20px"> [AWS Systems Manager](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-17)
-14. <img src="./images/solid/check.png" width="20px"> [AWS Systems Manager Parameter Store](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-13)
-15. <img src="./images/solid/check.png" width="20px"> [AWS Trusted Advisor](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-18)
+### **Developer Tools:**
+- <img src="./images/solid/check.png" width="20px"> [AWS AppConfig](https://docs.aws.amazon.com/appconfig/latest/userguide/what-is-appconfig.html)  
+- <img src="./images/solid/check.png" width="20px"> [AWS CLI](https://github.com/weder96/aws-certification-learning/tree/main/module-26#section_13) 
+- <img src="./images/solid/check.png" width="20px"> [AWS Cloud9](https://github.com/weder96/aws-certification-learning/tree/main/module-26#section_02) 
+- <img src="./images/solid/check.png" width="20px"> [AWS CloudShell](https://github.com/weder96/aws-certification-learning/tree/main/module-26#section_05)
+- <img src="./images/solid/check.png" width="20px"> [AWS CodeArtifact](https://github.com/weder96/aws-certification-learning/tree/main/module-26#section_09)
+- <img src="./images/solid/check.png" width="20px"> [AWS CodeBuild](https://github.com/weder96/aws-certification-learning/tree/main/module-26#section_04)
+- <img src="./images/solid/check.png" width="20px"> [AWS CodeCommit](https://github.com/weder96/aws-certification-learning/tree/main/module-26#section_06)
+- <img src="./images/solid/check.png" width="20px"> [AWS CodeDeploy](https://github.com/weder96/aws-certification-learning/tree/main/module-26#section_07)
+- <img src="./images/solid/check.png" width="20px"> [AWS CodePipeline](https://github.com/weder96/aws-certification-learning/tree/main/module-26#section_10)
+- <img src="./images/solid/check.png" width="20px"> [AWS CodeStar](https://github.com/weder96/aws-certification-learning/tree/main/module-26#section_03)
+- <img src="./images/solid/check.png" width="20px"> [AWS X-Ray](https://github.com/weder96/aws-certification-learning/tree/main/module-26#section_01)
 
+
+----------------------------------------------------------------------------------------------------------------------------
+### **End User Computing: *- 
+- Amazon AppStream 2.0 
+- Amazon WorkSpaces 
+- Amazon WorkSpaces Web
+
+
+
+----------------------------------------------------------------------------------------------------------------------------
+### **Frontend Web and Mobile: *- 
+- AWS Amplify 
+- AWS AppSync 
+- AWS Device Farm
+
+
+----------------------------------------------------------------------------------------------------------------------------
+### **Internet of Things (IoT): *- 
+- AWS IoT Core 
+- AWS IoT Greengrass
+
+
+----------------------------------------------------------------------------------------------------------------------------
+### **Machine Learning:** 
+- <img src="./images/solid/check.png" width="20px"> [Amazon Comprehend](https://github.com/weder96/aws-certification-learning/tree/main/module-19#section-01) 
+- <img src="./images/solid/check.png" width="20px"> [Amazon Kendra](https://github.com/weder96/aws-certification-learning/tree/main/module-19#section-04)
+- <img src="./images/solid/check.png" width="20px"> [Amazon Lex](https://github.com/weder96/aws-certification-learning/tree/main/module-19#section-05) 
+- <img src="./images/solid/check.png" width="20px"> [Amazon Polly](https://github.com/weder96/aws-certification-learning/tree/main/module-19#section-06) 
+- <img src="./images/solid/check.png" width="20px"> [Amazon Rekognition](https://github.com/weder96/aws-certification-learning/tree/main/module-19#section-07) 
+- <img src="./images/solid/check.png" width="20px"> [Amazon SageMaker](https://github.com/weder96/aws-certification-learning/tree/main/module-19#section-08)
+- <img src="./images/solid/check.png" width="20px"> [Amazon Textract](https://github.com/weder96/aws-certification-learning/tree/main/module-19#section-09)
+- <img src="./images/solid/check.png" width="20px"> [Amazon Transcribe](https://github.com/weder96/aws-certification-learning/tree/main/module-19#section-10)
+- <img src="./images/solid/check.png" width="20px"> [Amazon Translate](https://github.com/weder96/aws-certification-learning/tree/main/module-19#section-11)
+
+----------------------------------------------------------------------------------------------------------------------------
+### **Management and Governance:**
+- <img src="./images/solid/check.png" width="20px"> [AWS Auto Scaling](https://github.com/weder96/aws-certification-learning/tree/main/module-10#section-1)
+- <img src="./images/solid/check.png" width="20px"> [AWS CloudFormation](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-2)
+- <img src="./images/solid/check.png" width="20px"> [AWS CloudTrail](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-3)
+- <img src="./images/solid/check.png" width="20px"> [Amazon CloudWatch](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-4)
+- AWS Compute Optimizer
+- <img src="./images/solid/check.png" width="20px"> [AWS Config](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-7)
+- AWS Control Tower
+- AWS Health Dashboard
+- AWS Launch Wizard
+- AWS Management Console
+- <img src="./images/solid/check.png" width="20px"> [AWS Organizations](https://github.com/weder96/aws-certification-learning/tree/main/module-15#section-18)
+- AWS Resource Groups and Tag Editor
+- AWS Service Catalog
+- AWS Systems Manager
+- AWS Trusted Advisor
+- <img src="./images/solid/check.png" width="20px"> [AWS Trusted Advisor](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-18)
+- AWS Well-Architected Tool
+
+
+----------------------------------------------------------------------------------------------------------------------------
+### **Migration and Transfer:**
+- AWS Application Discovery Service
+- AWS Application Migration Service
+- AWS Database Migration Service (AWS DMS)
+- AWS Migration Hub
+- AWS Schema Conversion Tool (AWS SCT)
+- AWS Snow Family
+- AWS Transfer Family
 
 ----------------------------------------------------------------------------------------------------------------------------
 ### **Networking and Content Delivery:**
-1. <img src="./images/solid/check.png" width="20px"> [Amazon API Gateway](https://github.com/weder96/aws-certification-learning/tree/main/module-5#section-10)
-2. <img src="./images/solid/check.png" width="20px"> [Amazon CloudFront](https://github.com/weder96/aws-certification-learning/tree/main/module-5#section-1)
-3. <img src="./images/solid/check.png" width="20px"> [AWS Direct Connect](https://github.com/weder96/aws-certification-learning/tree/main/module-5#section-2)
-4. <img src="./images/solid/check.png" width="20px"> [Amazon Route 53](https://github.com/weder96/aws-certification-learning/tree/main/module-5#section-6)
-5. <img src="./images/solid/check.png" width="20px"> [Amazon VPC](https://github.com/weder96/aws-certification-learning/tree/main/module-5#section-8)
+- <img src="./images/solid/check.png" width="20px"> [Amazon API Gateway](https://github.com/weder96/aws-certification-learning/tree/main/module-5#section-10)
+- <img src="./images/solid/check.png" width="20px"> [Amazon CloudFront](https://github.com/weder96/aws-certification-learning/tree/main/module-5#section-1)
+- <img src="./images/solid/check.png" width="20px"> [AWS Direct Connect](https://github.com/weder96/aws-certification-learning/tree/main/module-5#section-2)
+- AWS Global Accelerator
+- <img src="./images/solid/check.png" width="20px"> [Amazon Route 53](https://github.com/weder96/aws-certification-learning/tree/main/module-5#section-6)
+- <img src="./images/solid/check.png" width="20px"> [Amazon VPC](https://github.com/weder96/aws-certification-learning/tree/main/module-5#section-8)
+- AWS VPN
 
 
 ----------------------------------------------------------------------------------------------------------------------------
 ### **Security, Identity, and Compliance:**
-1. <img src="./images/solid/check.png" width="20px"> [AWS Artifact](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-02)
-2. <img src="./images/solid/check.png" width="20px"> [AWS Certificate Manager (ACM)](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-07)
-3. <img src="./images/solid/check.png" width="20px"> [AWS CloudHSM](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-06)
-4. <img src="./images/solid/check.png" width="20px"> [Amazon Cognito](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-11)
-5. <img src="./images/solid/check.png" width="20px"> [Amazon Detective](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-17)
-6. <img src="./images/solid/check.png" width="20px"> [Amazon GuardDuty](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-03)
-7. <img src="./images/solid/check.png" width="20px"> [AWS Identity and Access Management (IAM)](https://github.com/weder96/aws-certification-learning/tree/main/module-15)
-8. <img src="./images/solid/check.png" width="20px"> [Amazon Inspector](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-01)
-9. <img src="./images/solid/check.png" width="20px"> [AWS License Manager](https://github.com/weder96/aws-certification-learning/tree/main/module-20#section-9)
-10. <img src="./images/solid/check.png" width="20px"> [Amazon Macie](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-19)
-11. <img src="./images/solid/check.png" width="20px"> [AWS Shield](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-23)
-12. <img src="./images/solid/check.png" width="20px"> [AWS WAF](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-04)
+- <img src="./images/solid/check.png" width="20px"> [AWS Artifact](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-02)
+- AWS Audit Manager
+- <img src="./images/solid/check.png" width="20px"> [AWS Certificate Manager (ACM)](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-07)
+- <img src="./images/solid/check.png" width="20px"> [AWS CloudHSM](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-06)
+- <img src="./images/solid/check.png" width="20px"> [Amazon Cognito](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-11)
+- <img src="./images/solid/check.png" width="20px"> [Amazon Detective](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-17)
+- AWS Directory Service
+- AWS Firewall Manager
+- <img src="./images/solid/check.png" width="20px"> [Amazon GuardDuty](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-03)
+- AWS IAM Identity Center (AWS Single Sign-On)
+- <img src="./images/solid/check.png" width="20px"> [AWS Identity and Access Management (IAM)](https://github.com/weder96/aws-certification-learning/tree/main/module-15)
+- <img src="./images/solid/check.png" width="20px"> [Amazon Inspector](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-01)
+- AWS Key Management Service (AWS KMS)
+- <img src="./images/solid/check.png" width="20px"> [Amazon Macie](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-19)
+- AWS Network Firewall
+- AWS Resource Access Manager (AWS RAM)
+- AWS Secrets Manager
+- AWS Security Hub
+- <img src="./images/solid/check.png" width="20px"> [AWS Shield](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-23)
+- <img src="./images/solid/check.png" width="20px"> [AWS WAF](https://github.com/weder96/aws-certification-learning/tree/main/module-4#section-04)
+
+
+----------------------------------------------------------------------------------------------------------------------------
+### **Serverless:**
+-  <img src="./images/solid/check.png" width="20px">[AWS Lambda](https://github.com/weder96/aws-certification-learning/tree/main/module-14#section-1)
+-  <img src="./images/solid/check.png" width="20px">[AWS Fargate](https://github.com/weder96/aws-certification-learning/tree/main/module-18#section-04)
 
 
 ----------------------------------------------------------------------------------------------------------------------------
 ### **Storage:**
-1. <img src="./images/solid/check.png" width="20px"> [AWS Backup](https://github.com/weder96/aws-certification-learning/tree/main/module-7#section-7)
-2. <img src="./images/solid/check.png" width="20px"> [Amazon Elastic Block Store (Amazon EBS)](https://github.com/weder96/aws-certification-learning/tree/main/module-7#section-3)
-3. <img src="./images/solid/check.png" width="20px"> [Amazon Elastic File System (Amazon EFS)](https://github.com/weder96/aws-certification-learning/tree/main/module-7#section-5)
-4. <img src="./images/solid/check.png" width="20px"> [Amazon S3](https://github.com/weder96/aws-certification-learning/tree/main/module-7#section-1)
-5. <img src="./images/solid/check.png" width="20px"> [Amazon S3 Glacier](https://github.com/weder96/aws-certification-learning/tree/main/module-7#section-1)
-6. <img src="./images/solid/check.png" width="20px"> [AWS Snowball Edge](https://github.com/weder96/aws-certification-learning/tree/main/module-7#section-2)
-7. <img src="./images/solid/check.png" width="20px"> [AWS Storage Gateway](https://github.com/weder96/aws-certification-learning/tree/main/module-7#section-6)
-
+- <img src="./images/solid/check.png" width="20px"> [AWS Backup](https://github.com/weder96/aws-certification-learning/tree/main/module-7#section-7)
+- <img src="./images/solid/check.png" width="20px"> [Amazon Elastic Block Store (Amazon EBS)](https://github.com/weder96/aws-certification-learning/tree/main/module-7#section-3)
+- <img src="./images/solid/check.png" width="20px"> [Amazon Elastic File System (Amazon EFS)](https://github.com/weder96/aws-certification-learning/tree/main/module-7#section-5)
+- AWS Elastic Disaster Recovery
+- <img src="./images/solid/check.png" width="20px"> [Amazon FSx](https://github.com/weder96/aws-certification-learning/tree/main/module-7#section-7)
+- <img src="./images/solid/check.png" width="20px"> [Amazon S3](https://github.com/weder96/aws-certification-learning/tree/main/module-7#section-1)
+- <img src="./images/solid/check.png" width="20px"> [Amazon S3 Glacier](https://github.com/weder96/aws-certification-learning/tree/main/module-7#section-1)
+- <img src="./images/solid/check.png" width="20px"> [AWS Storage Gateway](https://github.com/weder96/aws-certification-learning/tree/main/module-7#section-6)
 
 ----------------------------------------------------------------------------------------------------------------------------
 # The AWS services
@@ -546,12 +750,11 @@ Another cool detail of this video is the comments, where many credit approval fo
 
 3. IT & Software
 
-<a href="https://www.youtube.com/watch?v=h5jaLL0jHSQ&t=3939s" alt="">AWS Certified Cloud Practitioner Training Bootcamp</a>
-<br/>
-Accessed on: Aug. of 2021. <br/>
+[AWS Certified Cloud Practitioner Training Bootcamp](https://www.youtube.com/watch?v=NhDYbskXRgc)</a>
+Accessed on: November. of 2024. <br/>
 
-AWS Certified Cloud Practitioner Training Bootcamp
-Latest Exam Version - PREPARE and PASS the AWS Certified Cloud Practitioner (CLF-C01) Exam
+AWS Certified Cloud Practitioner Certification Course (CLF-C02) - Pass the Exam!
+Latest Exam Version - PREPARE and PASS the AWS Certified Cloud Practitioner (CLF-C02) Exam
 
 
 # Calculator
@@ -561,10 +764,5 @@ https://calculator.aws/#/
 
 # Labs
 https://amazon.qwiklabs.com/
-
-
-
-# Some of the paths already taken
-https://blogs.sap.com/2021/05/24/get-certified-aws-certified-cloud-practitioner-clf-c01/
 
 
