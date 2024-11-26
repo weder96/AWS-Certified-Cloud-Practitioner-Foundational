@@ -679,10 +679,9 @@ Create an account on the AWS website to familiarize yourself with the interface 
 # Other means I'm using too:
 1. Creating Mind Maps. <br/>
 2. Specific Books (Subject) and Questions. <br/>
-3. Creation of a database of questions about the specific Certification. <br/>
-4. Project-Based Learning<br/>
-5. Problem-Based Learning<br/>
-6. Search youtube classes on the subject. <br/>
+3. Project-Based Learning<br/>
+4. Problem-Based Learning<br/>
+5. Search youtube classes on the subject. <br/>
 
 #1. Creating Mind Maps.
 
@@ -712,12 +711,6 @@ Those images are designed with [xmind tool](http://www.xmind.net)
      <img width="100" style="margin-left: 15px;" src="./images/books/danielCarter.jpg" alt="danielCarter" />
      <img width="100" style="margin-left: 15px;" src="./images/books/ips.jpg" alt="ips" />
 </p>
-
-# 3. Creation of a database of questions about the specific Certification.
-
-<a href="https://www.awslagi.com/practice-questions/" alt="practice-questions">practice-questions</a><br/>
-Accessed on: Aug. of 2021.<br/>
-It has several questions for training, in the case of AWS Cloud Practitioner, the site has 3 Quiz and 6 Pdfs, with the questions.
 
 # 6. Look for classes on youtube on the subject.
 
@@ -756,6 +749,11 @@ Accessed on: November. of 2024. <br/>
 AWS Certified Cloud Practitioner Certification Course (CLF-C02) - Pass the Exam!
 Latest Exam Version - PREPARE and PASS the AWS Certified Cloud Practitioner (CLF-C02) Exam
 
+# 7 Other Training courses
+
+<a href="https://www.udemy.com/course/aws-certified-associate-architect-developer-sysops-admin" alt="">Amazon Web Services (AWS) Certified - 4 Certifications</a>
+<br/>
+Accessed on: Feb of 2023. This is a paid for course but has some very good content. Udemy have sales every few weeks so don't pay full price for any courses <br/>
 
 # Calculator
 
